@@ -1,0 +1,79 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### Home
+https://example.com
+Explore handmade craft shops reimagined — olive wood, acacia, and epoxy resin fused into cutting boards and mezuzahs. Shop unique handmade gifts online today.
+
+### Craftsmanship
+https://example.com/craftsmanship
+Craftsmanship | Natural Wood Art. handmade craft shops
+
+### Gallery
+https://example.com/gallery
+Gallery | Natural Wood Art. handmade craft shops
+
+### Contact
+https://example.com/contact
+Contact | Natural Wood Art. handmade craft shops
+
+### Products
+https://example.com/products
+Our Products - Natural Wood Art
+
+### Cart
+https://example.com/cart
+Your Cart
+
+### Checkout
+https://example.com/checkout
+Checkout
+
+### Login
+https://example.com/login
+Customer Login
+
+### Account
+https://example.com/account
+My Account
+
+### Order Success
+https://example.com/order-success
+Thank you for your order
+
+### Product Detail
+https://example.com/product/:slug
+Product Details - Natural Wood Art
+
+### Category
+https://example.com/category/:slug
+Products - Natural Wood Art
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
