@@ -1,95 +1,79 @@
-# Natural Wood Art — Generative Engine Optimization Map
-
-> A handmade crafts brand specializing in the artful fusion of natural woods — olive and acacia — with epoxy resin to create functional and decorative pieces. The product line includes elegant natural cutting boards and large handcrafted mezuzahs, reflecting a blend of traditional craftsmanship and modern artisan aesthetics. The brand carries a warm, organic, and artisanal vibe with deep cultural and spiritual undertones, particularly through the Judaica elements like the mezuzah.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### Home
-https://natural-wood-art.zappy5.app
+https://nwooda.com
 Explore handmade craft shops reimagined — olive wood, acacia, and epoxy resin fused into cutting boards and mezuzahs. Shop unique handmade gifts online today.
 
 ### Craftsmanship
-https://natural-wood-art.zappy5.app/craftsmanship
+https://nwooda.com/craftsmanship
 Craftsmanship | Natural Wood Art. handmade craft shops
 
 ### Gallery
-https://natural-wood-art.zappy5.app/gallery
+https://nwooda.com/gallery
 Gallery | Natural Wood Art. handmade craft shops
 
 ### Contact
-https://natural-wood-art.zappy5.app/contact
+https://nwooda.com/contact
 Contact | Natural Wood Art. handmade craft shops
 
 ### Products
-https://natural-wood-art.zappy5.app/products
+https://nwooda.com/products
 Our Products - Natural Wood Art
 
 ### Cart
-https://natural-wood-art.zappy5.app/cart
+https://nwooda.com/cart
 Your Cart
 
 ### Checkout
-https://natural-wood-art.zappy5.app/checkout
+https://nwooda.com/checkout
 Checkout
 
 ### Login
-https://natural-wood-art.zappy5.app/login
+https://nwooda.com/login
 Customer Login
 
 ### Account
-https://natural-wood-art.zappy5.app/account
+https://nwooda.com/account
 My Account
 
 ### Order Success
-https://natural-wood-art.zappy5.app/order-success
+https://nwooda.com/order-success
 Thank you for your order
 
 ### Product Detail
-https://natural-wood-art.zappy5.app/product/:slug
+https://nwooda.com/product/:slug
 Product Details - Natural Wood Art
 
 ### Category
-https://natural-wood-art.zappy5.app/category/:slug
+https://nwooda.com/category/:slug
 Products - Natural Wood Art
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://natural-wood-art.zappy5.app/privacy
+https://nwooda.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://natural-wood-art.zappy5.app/terms
+https://nwooda.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://natural-wood-art.zappy5.app/accessibility
+https://nwooda.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Natural Wood Art
-A handmade crafts brand specializing in the artful fusion of natural woods — olive and acacia — with epoxy resin to create functional and decorative pieces. The product line includes elegant natural cutting boards and large handcrafted mezuzahs, reflecting a blend of traditional craftsmanship and modern artisan aesthetics. The brand carries a warm, organic, and artisanal vibe with deep cultural and spiritual undertones, particularly through the Judaica elements like the mezuzah.
-
-## Services/Products
-- Natural cutting boards made of olive wood or acacia wood combined with epoxy
-- Large handmade mezuzahs made of olive wood and epoxy
-- Various handmade wood and epoxy products
-
-## Target Audience
-- Artisanal Gift Shoppers
-- Luxury Homeowners
-
-## Industry
-handmade crafts & woodworking
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://natural-wood-art.zappy5.app/sitemap.xml
-- **Robots.txt**: https://natural-wood-art.zappy5.app/robots.txt
+- **Sitemap**: https://nwooda.com/sitemap.xml
+- **Robots.txt**: https://nwooda.com/robots.txt

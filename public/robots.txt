@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://natural-wood-art.zappy5.app/sitemap.xml
+Sitemap: https://nwooda.com/sitemap.xml
