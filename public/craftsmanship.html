@@ -432,12 +432,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -450,7 +450,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -586,7 +586,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -777,7 +777,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '+972505588259';
         
@@ -794,7 +794,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -866,7 +866,7 @@
     </div>
     <div class="craftsmanship-intro-image-col">
       <div class="craftsmanship-intro-image-wrapper">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1775560675950-5b08vn49k" data-element-type="image" data-zappy-zoom-wrapper-width="480px" data-zappy-zoom-wrapper-height="658px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 480px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 658px !important; display: block !important;"><img data-placeholder="craftsmanship-intro-image-1" data-context="A tall vertical studio photograph showing the full woodworking process in a single frame: rough-cut olive wood slabs leaning against a workbench, fine sanding dust caught in warm workshop light, a craftsman" s="" hands="" smoothing="" a="" board,="" and="" finished="" cutting="" board="" with="" blue="" epoxy="" resin="" river="" gleaming="" in="" the="" foreground.="" atmosphere="" is="" warm,="" intimate,="" artisanal="" —="" golden="" light,="" wood="" shavings,="" hand="" tools,="" beautiful="" contrast="" between="" raw="" material="" polished="" surface.'="" width="560" height="760" src="/assets/site-craftsmanship-intro-image-1-1775560835450-rorizh.webp?v=1775560837573" alt="Studio view of olive wood slabs, sanding dust, and a finished epoxy resin cutting board in a woodworking workshop" data-element-type="image" data-element-id="img-1775560675950-5b08vn49k" data-zappy-zoom="1.025" data-zappy-original-width="479.9884338378906" data-zappy-original-height="657.9977416992188" data-zappy-object-position="100% 45%" style="object-position: 100% 45% !important; display: block !important; object-fit: cover !important; margin: 0px !important; position: absolute !important; left: -29.5689% !important; top: -1.125% !important; width: 129.569% !important; height: 102.5% !important; max-width: none !important; max-height: none !important;"></div>
+        <div data-zappy-zoom-wrapper="true" data-element-id="img-1775560675950-5b08vn49k" data-element-type="image" data-zappy-zoom-wrapper-width="480px" data-zappy-zoom-wrapper-height="658px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 480px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 658px !important; display: block !important;"><img data-placeholder="craftsmanship-intro-image-1" data-context="A tall vertical studio photograph showing the full woodworking process in a single frame: rough-cut olive wood slabs leaning against a workbench, fine sanding dust caught in warm workshop light, a craftsman" s="" hands="" smoothing="" a="" board,="" and="" finished="" cutting="" board="" with="" blue="" epoxy="" resin="" river="" gleaming="" in="" the="" foreground.="" atmosphere="" is="" warm,="" intimate,="" artisanal="" —="" golden="" light,="" wood="" shavings,="" hand="" tools,="" beautiful="" contrast="" between="" raw="" material="" polished="" surface.'="" width="560" height="760" src="/assets/site-craftsmanship-intro-image-1-1775560835450-rorizh.webp?v=1775560837573" alt="Studio view of olive wood slabs, sanding dust, and a finished epoxy resin cutting board in a woodworking workshop" data-element-type="image" data-element-id="img-1775560675950-5b08vn49k" data-zappy-zoom="1.025" data-zappy-original-width="479.9884338378906" data-zappy-original-height="657.9977416992188" data-zappy-object-position="100% 45%" style="object-position: 100% 45% !important; display: block; object-fit: cover !important; margin: 0px !important; position: absolute !important; left: -2.5726% !important; top: -1.125% !important; width: 102.573% !important; height: 102.5% !important; max-width: none !important; max-height: none !important;"></div>
         <div class="craftsmanship-intro-image-caption">
           <span class="craftsmanship-intro-caption-line"></span>
           <span class="craftsmanship-intro-caption-text">Natural variation is never sanded away — it is the signature.</span>
