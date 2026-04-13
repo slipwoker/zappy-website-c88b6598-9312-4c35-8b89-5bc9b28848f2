@@ -10960,6 +10960,15 @@ main,
 /* /Zappy custom logo size */
 
 
+.home-features-section .home-feature-card--right .home-feature-image-wrap > div[data-zappy-zoom-wrapper] {
+  height: 260px !important;
+}
+
+.home-features-section .home-feature-card--right .home-feature-image-wrap > div[data-zappy-zoom-wrapper] img {
+  height: 102.5% !important;
+  top: -1.25% !important;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
