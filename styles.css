@@ -11051,6 +11051,33 @@ main,
 }
 }
 
+.home-showcase-section {
+  overflow: visible !important;
+}
+
+.home-showcase-section .home-showcase-container {
+  overflow: visible !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.home-showcase-section .home-showcase-content {
+  overflow: visible !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  min-width: 0 !important;
+}
+
+.home-showcase-section .home-showcase-heading,
+.home-showcase-section .home-showcase-body,
+.home-showcase-section .home-showcase-eyebrow {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
