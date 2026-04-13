@@ -440,11 +440,11 @@
   </div>
 </aside>
   <script>
-  &lt;!-- Search handling for e-commerce pages --&gt;
+  <!-- Search handling for e-commerce pages -->
   (function() {
     // Unified search function that works in both preview and deployed modes
     function performSearch(query) {
-      if (query.length &lt; 2) return;
+      if (query.length < 2) return;
       
       // Check if we're in preview mode (URL contains preview-fullscreen)
       var isPreview = window.location.pathname.includes('preview-fullscreen');
@@ -479,7 +479,7 @@
     var searchToggle = document.querySelector('.nav-search-toggle');
     
     // Open mobile search panel
-    if (searchToggle &amp;&amp; mobileSearchPanel) {
+    if (searchToggle && mobileSearchPanel) {
       searchToggle.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
@@ -491,7 +491,7 @@
     }
     
     // Close mobile search panel
-    if (closeMobileSearch &amp;&amp; mobileSearchPanel) {
+    if (closeMobileSearch && mobileSearchPanel) {
       closeMobileSearch.addEventListener('click', function() {
         mobileSearchPanel.classList.remove('active');
         if (mobileSearchInput) mobileSearchInput.value = '';
