@@ -10957,11 +10957,8 @@ main,
     min-height: 86px !important;
   }
 }
-/* /Zappy custom logo size */
-
-
 .home-features-section .home-feature-card--right .home-feature-image-wrap > div[data-zappy-zoom-wrapper] {
-  height: 260px !important;
+  height: 550px !important;
 }
 
 .home-features-section .home-feature-card--right .home-feature-image-wrap > div[data-zappy-zoom-wrapper] img {
