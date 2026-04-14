@@ -10966,110 +10966,6 @@ main,
   top: -1.25% !important;
 }
 
-/* === MOBILE FIX: Signature Works (home-showcase) section === */
-/* Converts absolute-positioned tile layout to grid on mobile  */
-@media (max-width: 768px) {
-  .home-showcase-section .home-showcase-imagery {
-    min-height: auto !important;
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 8px;
-    align-items: stretch;
-  }
-
-  .home-showcase-section .home-showcase-main-img {
-    width: 100% !important;
-    grid-column: 1 / -1;
-    grid-row: 1;
-  }
-
-  .home-showcase-section .home-showcase-main-img img {
-    aspect-ratio: 16 / 10 !important;
-    max-height: none !important;
-  }
-
-  .home-showcase-section .home-showcase-main-img [data-zappy-zoom-wrapper] {
-    min-height: auto !important;
-  }
-
-  .home-showcase-section .home-showcase-tile {
-    position: static !important;
-    width: 100% !important;
-    aspect-ratio: auto !important;
-    box-shadow: 0 6px 16px rgba(31, 18, 12, 0.10);
-  }
-
-  .home-showcase-section .home-showcase-tile--tr {
-    top: auto !important;
-    right: auto !important;
-    width: 100% !important;
-    aspect-ratio: auto !important;
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .home-showcase-section .home-showcase-tile--bl {
-    bottom: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    aspect-ratio: auto !important;
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .home-showcase-section .home-showcase-tile img {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 4 / 3 !important;
-    object-fit: cover !important;
-    max-height: none !important;
-  }
-
-  .home-showcase-section .home-showcase-tile [data-zappy-zoom-wrapper] {
-    min-height: auto !important;
-  }
-
-  .home-showcase-section .home-showcase-heading {
-    font-size: 28px !important;
-  }
-
-  .home-showcase-section .home-showcase-body {
-    max-width: 100%;
-    font-size: 15px !important;
-    line-height: 1.7;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-showcase-section .home-showcase-heading {
-    font-size: 24px !important;
-  }
-
-  .home-showcase-section .home-showcase-imagery {
-    gap: 6px;
-  }
-
-  .home-showcase-section .home-showcase-body {
-    font-size: 14px !important;
-  }
-}
-
-/* === MOBILE FIX: Our Craft (home-features) image heights === */
-/* Zoom-wrapper inline heights (541/558px) are too tall for single-column mobile. */
-/* Caps the <figure> parent at 240px to clip the oversized wrappers uniformly.    */
-@media (max-width: 768px) {
-  .home-features-section .home-feature-image-wrap {
-    max-height: 240px !important;
-    overflow: hidden !important;
-  }
-
-  .home-features-section .home-feature-image-wrap img {
-    object-fit: cover !important;
-  }
-}
-
-
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
@@ -11380,7 +11276,8 @@ nav .sub-menu.zappy-empty-submenu,
   }
   
   /* Fix zoom wrapper images on mobile - make responsive */
-  [data-zappy-zoom-wrapper="true"] img {
+  /* Exclude images with mobile overrides — those are handled by JS to honor user settings */
+  [data-zappy-zoom-wrapper="true"] img:not([data-zappy-mobile-object-position]):not([data-zappy-mobile-zoom]) {
     position: relative !important;
     width: 100% !important;
     height: auto !important;
@@ -11687,6 +11584,9 @@ section[data-hero-type] {
 
 /* ========== END GRID RESPONSIVE FIX ========== */
 
+/* Footer contact alignment fix */
+.footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
+
 
 /* ZAPPY_VARIANT_OPTION_STATES */
 .variant-option.disabled { opacity: 0.3; position: relative; }
@@ -11707,6 +11607,3 @@ section[data-hero-type] {
 [data-zappy-bg-type="color"] { background-image: none !important; background-color: var(--zappy-bg-color, transparent) !important; }
 [data-zappy-bg-type="image"] { background-image: linear-gradient(var(--zappy-bg-overlay, rgba(0,0,0,0)), var(--zappy-bg-overlay, rgba(0,0,0,0))), var(--zappy-bg-image, none) !important; background-size: cover !important; background-position: center !important; background-repeat: no-repeat !important; }
 [data-zappy-bg-type="video"] { background-image: none !important; }
-
-/* Footer contact alignment fix */
-.footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
