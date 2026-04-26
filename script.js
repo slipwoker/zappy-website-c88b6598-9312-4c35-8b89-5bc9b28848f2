@@ -788,6 +788,8 @@ window.onload = function() {
 })();
 
 ;
+
+;
 /* ==ZAPPY E-COMMERCE JS START== */
 // E-commerce functionality
 (function() {
@@ -6582,6 +6584,22 @@ function showProductNotFound(container, t) {
 }
 
 function renderProductDetail(container, product, t) {
+  // Variant attribute values may legitimately contain characters that are
+  // unsafe inside HTML attributes or text (e.g. Hebrew size "מ\"מ" with a
+  // double quote, sizes like 5'10", names with & < >). Without escaping,
+  // data-attr/data-value get truncated by the browser parser, the runtime
+  // selection matcher fails to find the variant, and every option appears
+  // disabled / images stop swapping.
+  function _eA(text) {
+    if (text === null || text === undefined) return '';
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
   // Ensure image paths work in preview + live
   const images = (product.images || []).map(function(img) {
     if (window.resolveProductImageUrl) {
@@ -6691,20 +6709,20 @@ function renderProductDetail(container, product, t) {
           // For color attribute, prefer configured hex and fall back for older sites.
           if (isColorAttr) {
             var bgColor = window.getConfiguredColorSwatchHex(product, attrKey, value);
-            return '<button type="button" class="variant-option color-swatch" data-attr="' + attrKey + '" data-value="' + value + '" data-display-value="' + displayValue + '" data-color-hex="' + bgColor + '" style="background-color: ' + bgColor + ';" title="' + displayValue + '"></button>';
+            return '<button type="button" class="variant-option color-swatch" data-attr="' + _eA(attrKey) + '" data-value="' + _eA(value) + '" data-display-value="' + _eA(displayValue) + '" data-color-hex="' + _eA(bgColor) + '" style="background-color: ' + _eA(bgColor) + ';" title="' + _eA(displayValue) + '"></button>';
           }
-          return '<button type="button" class="variant-option" data-attr="' + attrKey + '" data-value="' + value + '" data-display-value="' + displayValue + '">' + displayValue + '</button>';
+          return '<button type="button" class="variant-option" data-attr="' + _eA(attrKey) + '" data-value="' + _eA(value) + '" data-display-value="' + _eA(displayValue) + '">' + _eA(displayValue) + '</button>';
         }).join('');
         
-        return '<div class="variant-group" data-group="' + attrKey + '"><label class="variant-group-label">' + label + ': <span class="variant-selected-value"></span></label><div class="variant-options">' + optionsHtml + '</div></div>';
+        return '<div class="variant-group" data-group="' + _eA(attrKey) + '"><label class="variant-group-label">' + _eA(label) + ': <span class="variant-selected-value"></span></label><div class="variant-options">' + optionsHtml + '</div></div>';
       }).join('')
       : (() => {
         const label = t.selectVariant || 'Select option';
         const optionsHtml = activeVariants.map(variant => {
           const variantLabel = variant.name || variant.sku || label;
-          return '<button type="button" class="variant-option" data-attr="variant" data-value="' + variant.id + '" data-variant-id="' + variant.id + '">' + variantLabel + '</button>';
+          return '<button type="button" class="variant-option" data-attr="variant" data-value="' + _eA(variant.id) + '" data-variant-id="' + _eA(variant.id) + '">' + _eA(variantLabel) + '</button>';
         }).join('');
-        return '<div class="variant-group" data-group="variant"><label class="variant-group-label">' + label + ': <span class="variant-selected-value"></span></label><div class="variant-options">' + optionsHtml + '</div></div>';
+        return '<div class="variant-group" data-group="variant"><label class="variant-group-label">' + _eA(label) + ': <span class="variant-selected-value"></span></label><div class="variant-options">' + optionsHtml + '</div></div>';
       })();
     
     variantSelectorHtml = '<div class="product-variants" id="product-variants">' + groupsHtml + '</div>';
@@ -6910,8 +6928,8 @@ function renderProductDetail(container, product, t) {
               <table class="specs-table">
                 ${product.custom_fields.specifications.map(spec => `
                   <tr>
-                    <th>${spec.key}</th>
-                    <td>${spec.value}</td>
+                    <th dir="auto">${spec.key}</th>
+                    <td dir="auto">${(spec.value || '').replace(/\\,/g, ',')}</td>
                   </tr>
                 `).join('')}
               </table>
@@ -7524,9 +7542,13 @@ function updateVariantUI(variant, product, t, selectedAttributes) {
       }
     }
     
-    // Update SKU if variant has one
-    if (skuDisplay && variant.sku) {
-      skuDisplay.textContent = t.sku + ': ' + variant.sku;
+    // Update SKU: prefer variant SKU, fall back to base product SKU
+    if (skuDisplay) {
+      if (variant.sku) {
+        skuDisplay.textContent = t.sku + ': ' + variant.sku;
+      } else if (product.sku) {
+        skuDisplay.textContent = t.sku + ': ' + product.sku;
+      }
     }
     
     // Update add to cart button
@@ -7551,6 +7573,10 @@ function updateVariantUI(variant, product, t, selectedAttributes) {
     window.selectedVariant = variant;
   } else {
     // No matching variant found
+    // Reset SKU to base product SKU
+    if (skuDisplay && product.sku) {
+      skuDisplay.textContent = t.sku + ': ' + product.sku;
+    }
     // Restore original image when no variant is matched
     if (mainImage && window._originalMainImageSrc) {
       mainImage.src = window._originalMainImageSrc;
