@@ -15089,6 +15089,19 @@ main,
   left: 0px !important;
 }
 }
+
+.footer-contact-list li a {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.footer-contact-list li address {
+  white-space: nowrap;
+  display: inline;
+  font-style: normal;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
