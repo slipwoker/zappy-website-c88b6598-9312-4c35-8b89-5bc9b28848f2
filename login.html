@@ -223,6 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Login">
     <meta name="twitter:description" content="Customer Login">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://nwooda.com#organization","name":"Natural Wood Art","url":"https://nwooda.com","description":"A handmade crafts brand specializing in the artful fusion of natural woods — olive and acacia — with epoxy resin to create functional and decorative pieces. The product line includes elegant natural cutting boards and large handcrafted mezuzahs, reflecting a blend of traditional craftsmanship and modern artisan aesthetics. The brand carries a warm, organic, and artisanal vibe with deep cultural and spiritual undertones, particularly through the Judaica elements like the mezuzah.","address":{"@type":"PostalAddress","streetAddress":"4522570, ISRAEL"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"support@nwooda.com","telephone":"+972505588259"}]},{"@type":"WebSite","@id":"https://nwooda.com#website","url":"https://nwooda.com","name":"Natural Wood Art","publisher":{"@id":"https://nwooda.com#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nwooda.com"},{"@type":"ListItem","position":2,"name":"Login","item":"https://nwooda.com/login"}]}]}</script>
     <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   
@@ -300,11 +301,37 @@
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -314,9 +341,7 @@
     window.ZAPPY_WEBSITE_ID = "c88b6598-9312-4c35-8b89-5bc9b28848f2";
     // Preview pages are served by the Zappy server itself (localhost in dev), so use that base.
     // Deployed sites are static and must call the public Zappy API (never localhost).
-    window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview'))
-      ? "https://api.zappy5.com"
-      : "https://api.zappy5.com";
+    window.ZAPPY_API_BASE = "https://api.zappy5.com";
   </script>
   
     <div class="mobile-search-panel" id="mobile-search-panel">
@@ -410,7 +435,7 @@
             </a><span class="legal-sep">·</span><a href="/accessibility">Accessibility</a><span class="legal-sep">·</span><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></div></footer>
   
 <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
-<aside class="cart-drawer ltr" id="cart-drawer" dir="ltr">
+<aside class="cart-drawer" id="cart-drawer">
   <div class="cart-drawer-header">
     <h2>Your Cart</h2>
     <button type="button" class="cart-drawer-close" id="cart-drawer-close" aria-label="Close">
