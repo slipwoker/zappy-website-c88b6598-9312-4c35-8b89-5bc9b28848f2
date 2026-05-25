@@ -2329,12 +2329,12 @@ Remove
 
 
 
-Subtotal  $0
-VAT Included  $0
-Shipping  $0
-Discount  -$0
+Subtotal:  $0
+VAT Included:  $0
+Shipping:  $0
+Discount:  $0
 
-Total  $0
+Total:  $0
 
 
 
@@ -2344,6 +2344,9 @@ I agree to the   Terms and Conditions
 
 
 Place Order
+
+
+
 
 
 
@@ -3199,7 +3202,7 @@ All Products
 # Return Policy
 
 
-Last Updated: 4/28/2026
+Last Updated: 5/25/2026
 
 
 
