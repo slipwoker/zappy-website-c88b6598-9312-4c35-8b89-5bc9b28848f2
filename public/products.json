@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-05-26T08:06:03.735Z",
+  "generated_at": "2026-05-26T08:09:03.564Z",
   "base_url": "https://nwooda.com",
   "currency": "USD",
   "count": 4,
@@ -12,6 +12,7 @@
       "name_translations": {
         "de": "Besondere Produkte",
         "en": "Special products",
+        "fr": "Produits spéciaux",
         "he": "מוצרים מיוחדים"
       },
       "description": "<p>These products are more than just household items; they are statement pieces. They bridge the gap between the earthy, warm tones of the Mediterranean and the minimalist, polished finish of contemporary design. Whether used as a gift or a home upgrade, they symbolize luxury, roots, and creativity.</p>",
@@ -34,7 +35,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/special-products-6muuvm",
       "categories": [],
-      "updated_at": "2026-05-26T08:03:09.362Z"
+      "updated_at": "2026-05-26T08:05:53.151Z"
     },
     {
       "id": "0a20a953-b6f9-4802-9610-e40508c8bfaa",
@@ -43,6 +44,7 @@
       "name_translations": {
         "de": "Mesusot aus Olivenholz und Epoxidharz",
         "en": "Mezuzahs  olive wood and epoxy",
+        "fr": "Mezuzahs bois d'olivier et époxy",
         "he": "מזוזות מעץ זית ואפוקסי"
       },
       "description": "<p>Mezuzahs that combine olive wood and epoxy (synthetic resin) are unique pieces of art that combine natural, raw materials with modern, luxurious design. This combination creates a \"Natural Wood Art\" look in which each mezuzah is one of a kind.</p>",
@@ -69,7 +71,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/mezuzahs-olive-wood-and-epoxy-ta6urn",
       "categories": [],
-      "updated_at": "2026-05-26T08:03:09.364Z"
+      "updated_at": "2026-05-26T08:05:53.149Z"
     },
     {
       "id": "4b95ce83-f33a-43a3-aa49-c1af09dcfae6",
@@ -78,6 +80,7 @@
       "name_translations": {
         "de": "Schneidebrett aus Olivenholz",
         "en": "olive wood cutting bord",
+        "fr": "planche à découper en bois d'olivier",
         "he": "קרש חיתוך מעץ זית"
       },
       "description": "<p>This cutting board is a <strong>high-end artisanal piece</strong> that blends the rustic, ancient beauty of natural olive wood with the sleek, modern aesthetic of liquid resin. Each board is a <strong>one-of-a-kind creation</strong>, as the resin follows the unique, organic contours of the specific wood slab used.</p>",
@@ -103,7 +106,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/olive-wood-cutting-bord-mr721e",
       "categories": [],
-      "updated_at": "2026-05-26T08:03:09.362Z"
+      "updated_at": "2026-05-26T08:05:53.150Z"
     },
     {
       "id": "05ae8d26-1904-40c1-aa30-a82e2926a88d",
@@ -112,6 +115,7 @@
       "name_translations": {
         "de": "Schneidebrett aus indischem Palisander",
         "en": "Indian Rosewood cutting bord",
+        "fr": "planche à découper en palissandre indien",
         "he": "קרש חיתוך מעץ סיסם הודי"
       },
       "description": "<p>Indian Rosewood cutting bord</p>",
@@ -134,7 +138,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-wxwt67",
       "categories": [],
-      "updated_at": "2026-05-26T08:03:09.361Z"
+      "updated_at": "2026-05-26T08:05:53.150Z"
     }
   ]
 }
