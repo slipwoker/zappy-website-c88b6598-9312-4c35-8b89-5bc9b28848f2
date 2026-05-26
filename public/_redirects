@@ -1,48 +1,9 @@
 # Clean URL redirects for Render static hosting
-# Generated: 2026-05-26T07:54:43.778Z
-# NOTE: Render uses render.yaml for routing, not _redirects (that is Netlify)
-# This file is kept for reference only
-
-/craftsmanship  /craftsmanship.html  200!
-/gallery  /gallery.html  200!
-/contact  /contact.html  200!
-/products  /products.html  200!
-/cart  /cart.html  200!
-/checkout  /checkout.html  200!
-/login  /login.html  200!
-/account  /account.html  200!
-/order-success  /order-success.html  200!
-/return-policy  /return-policy.html  200!
-/privacy  /privacy.html  200!
-/accessibility  /accessibility.html  200!
-/terms  /terms.html  200!
-
-# Language slug rewrites for SEO
-/he  /he/index.html  200!
-/he/craftsmanship  /he/craftsmanship.html  200!
-/he/gallery  /he/gallery.html  200!
-/he/contact  /he/contact.html  200!
-/he/products  /he/products.html  200!
-/he/cart  /he/cart.html  200!
-/he/checkout  /he/checkout.html  200!
-/he/login  /he/login.html  200!
-/he/account  /he/account.html  200!
-/he/order-success  /he/order-success.html  200!
-/he/return-policy  /he/return-policy.html  200!
-/he/privacy  /he/privacy.html  200!
-/he/accessibility  /he/accessibility.html  200!
-/he/terms  /he/terms.html  200!
-/he  /he/index.html  200!
-
-# Legal pages - redirect old .html URLs to friendly URLs
-/privacy.html  /privacy  301
-/accessibility.html  /accessibility  301
-/terms.html  /terms  301
-
-/  /index.html  200!
+# Generated: 2026-05-26T07:58:46.230Z
+# Generated during publish asset refresh
 
 # Dynamic routes - serve dedicated HTML templates for dynamic paths
 /product/*  /product.html  200!
 /category/*  /category.html  200!
-/he/product/*  /he/product/index.html  200!
-/he/category/*  /he/category/index.html  200!
+/he/product/*  /product.html  200!
+/he/category/*  /category.html  200!
