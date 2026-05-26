@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-05-26T08:16:07.067Z",
+  "generated_at": "2026-05-26T08:20:16.342Z",
   "base_url": "https://nwooda.com",
   "currency": "USD",
   "count": 4,
@@ -39,13 +39,13 @@
     },
     {
       "id": "0a20a953-b6f9-4802-9610-e40508c8bfaa",
-      "slug": "mezuzahs-olive-wood-and-epoxy-ta6urn",
+      "slug": "mezuzahs-olive-wood-and-epoxy-xbqixw",
       "name": "Mezuzahs  olive wood and epoxy",
       "name_translations": {
         "de": "Mesusot aus Olivenholz und Epoxidharz",
         "en": "Mezuzahs  olive wood and epoxy",
-        "fr": "Mezuzahs bois d'olivier et époxy",
-        "he": "מזוזות מעץ זית ואפוקסי"
+        "fr": "Mezouzahs en bois d'olivier et époxy",
+        "he": "מזוזות עץ זית ואפוקסי"
       },
       "description": "<p>Mezuzahs that combine olive wood and epoxy (synthetic resin) are unique pieces of art that combine natural, raw materials with modern, luxurious design. This combination creates a \"Natural Wood Art\" look in which each mezuzah is one of a kind.</p>",
       "short_description": "Mezuzahs that combine olive wood and epoxy (synthetic resin) are unique pieces of art that combine natural, raw materials with modern, luxurious design. This combination creates a \"Natural Wood Art\" look in which each mezuzah is one of a kind.",
@@ -57,7 +57,9 @@
       "currency": "USD",
       "images": [
         "https://nwooda.com/assets/product-1776962615785-mitcv.webp",
+        "https://nwooda.com/assets/product-1779783514616-epf9me.webp",
         "https://nwooda.com/assets/product-1774888875251-f43754.webp",
+        "https://nwooda.com/assets/product-1779783545594-l6ykbw.webp",
         "https://nwooda.com/assets/product-1774888879208-e1mey9.webp",
         "https://nwooda.com/assets/product-1774888883796-sp7kan.webp",
         "https://nwooda.com/assets/product-1774888889983-en2j7j.webp",
@@ -69,9 +71,9 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://nwooda.com/product/mezuzahs-olive-wood-and-epoxy-ta6urn",
+      "url": "https://nwooda.com/product/mezuzahs-olive-wood-and-epoxy-xbqixw",
       "categories": [],
-      "updated_at": "2026-05-26T08:15:35.671Z"
+      "updated_at": "2026-05-26T08:19:44.915Z"
     },
     {
       "id": "4b95ce83-f33a-43a3-aa49-c1af09dcfae6",
