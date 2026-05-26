@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-05-26T07:54:43.774Z",
+  "generated_at": "2026-05-26T08:03:43.459Z",
   "base_url": "https://nwooda.com",
   "currency": "USD",
   "count": 4,
@@ -10,6 +10,7 @@
       "slug": "special-products-6muuvm",
       "name": "Special products",
       "name_translations": {
+        "de": "Besondere Produkte",
         "en": "Special products",
         "he": "מוצרים מיוחדים"
       },
@@ -33,13 +34,14 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/special-products-6muuvm",
       "categories": [],
-      "updated_at": "2026-05-26T07:51:30.698Z"
+      "updated_at": "2026-05-26T08:03:09.362Z"
     },
     {
       "id": "0a20a953-b6f9-4802-9610-e40508c8bfaa",
       "slug": "mezuzahs-olive-wood-and-epoxy-ta6urn",
       "name": "Mezuzahs  olive wood and epoxy",
       "name_translations": {
+        "de": "Mesusot aus Olivenholz und Epoxidharz",
         "en": "Mezuzahs  olive wood and epoxy",
         "he": "מזוזות מעץ זית ואפוקסי"
       },
@@ -67,13 +69,14 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/mezuzahs-olive-wood-and-epoxy-ta6urn",
       "categories": [],
-      "updated_at": "2026-05-26T07:51:30.696Z"
+      "updated_at": "2026-05-26T08:03:09.364Z"
     },
     {
       "id": "4b95ce83-f33a-43a3-aa49-c1af09dcfae6",
       "slug": "olive-wood-cutting-bord-mr721e",
       "name": "olive wood cutting bord",
       "name_translations": {
+        "de": "Schneidebrett aus Olivenholz",
         "en": "olive wood cutting bord",
         "he": "קרש חיתוך מעץ זית"
       },
@@ -100,13 +103,14 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/olive-wood-cutting-bord-mr721e",
       "categories": [],
-      "updated_at": "2026-05-26T07:51:30.697Z"
+      "updated_at": "2026-05-26T08:03:09.362Z"
     },
     {
       "id": "05ae8d26-1904-40c1-aa30-a82e2926a88d",
       "slug": "indian-rosewood-cutting-bord-wxwt67",
       "name": "Indian Rosewood cutting bord",
       "name_translations": {
+        "de": "Schneidebrett aus indischem Palisander",
         "en": "Indian Rosewood cutting bord",
         "he": "קרש חיתוך מעץ סיסם הודי"
       },
@@ -130,7 +134,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-wxwt67",
       "categories": [],
-      "updated_at": "2026-05-26T07:51:30.697Z"
+      "updated_at": "2026-05-26T08:03:09.361Z"
     }
   ]
 }
