@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-05-25T17:49:37.255Z",
+  "generated_at": "2026-05-26T07:52:01.858Z",
   "base_url": "https://nwooda.com",
   "currency": "USD",
   "count": 4,
@@ -9,7 +9,10 @@
       "id": "1baf4f33-7702-4329-af1b-0126f7cdf4a6",
       "slug": "special-products-6muuvm",
       "name": "Special products",
-      "name_translations": {},
+      "name_translations": {
+        "en": "Special products",
+        "he": "מוצרים מיוחדים"
+      },
       "description": "<p>These products are more than just household items; they are statement pieces. They bridge the gap between the earthy, warm tones of the Mediterranean and the minimalist, polished finish of contemporary design. Whether used as a gift or a home upgrade, they symbolize luxury, roots, and creativity.</p>",
       "short_description": "These products are more than just household items; they are statement pieces. They bridge the gap between the earthy, warm tones of the Mediterranean and the minimalist, polished finish of contemporary design. Whether used as a gift or a home upgrade, they symbolize luxury, roots, and creativity.",
       "sku": null,
@@ -30,13 +33,16 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/special-products-6muuvm",
       "categories": [],
-      "updated_at": "2026-04-06T14:59:50.632Z"
+      "updated_at": "2026-05-26T07:51:30.698Z"
     },
     {
       "id": "0a20a953-b6f9-4802-9610-e40508c8bfaa",
       "slug": "mezuzahs-olive-wood-and-epoxy-ta6urn",
       "name": "Mezuzahs  olive wood and epoxy",
-      "name_translations": {},
+      "name_translations": {
+        "en": "Mezuzahs  olive wood and epoxy",
+        "he": "מזוזות מעץ זית ואפוקסי"
+      },
       "description": "<p>Mezuzahs that combine olive wood and epoxy (synthetic resin) are unique pieces of art that combine natural, raw materials with modern, luxurious design. This combination creates a \"Natural Wood Art\" look in which each mezuzah is one of a kind.</p>",
       "short_description": "Mezuzahs that combine olive wood and epoxy (synthetic resin) are unique pieces of art that combine natural, raw materials with modern, luxurious design. This combination creates a \"Natural Wood Art\" look in which each mezuzah is one of a kind.",
       "sku": null,
@@ -61,13 +67,16 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/mezuzahs-olive-wood-and-epoxy-ta6urn",
       "categories": [],
-      "updated_at": "2026-04-23T16:44:57.967Z"
+      "updated_at": "2026-05-26T07:51:30.696Z"
     },
     {
       "id": "4b95ce83-f33a-43a3-aa49-c1af09dcfae6",
       "slug": "olive-wood-cutting-bord-mr721e",
       "name": "olive wood cutting bord",
-      "name_translations": {},
+      "name_translations": {
+        "en": "olive wood cutting bord",
+        "he": "קרש חיתוך מעץ זית"
+      },
       "description": "<p>This cutting board is a <strong>high-end artisanal piece</strong> that blends the rustic, ancient beauty of natural olive wood with the sleek, modern aesthetic of liquid resin. Each board is a <strong>one-of-a-kind creation</strong>, as the resin follows the unique, organic contours of the specific wood slab used.</p>",
       "short_description": "This cutting board is a high-end artisanal piece that blends the rustic, ancient beauty of natural olive wood with the sleek, modern aesthetic of liquid resin. Each board is a one-of-a-kind creation, as the resin follows the unique, organic contours of the specific wood slab used.",
       "sku": null,
@@ -91,13 +100,16 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/olive-wood-cutting-bord-mr721e",
       "categories": [],
-      "updated_at": "2026-04-23T16:38:56.765Z"
+      "updated_at": "2026-05-26T07:51:30.697Z"
     },
     {
       "id": "05ae8d26-1904-40c1-aa30-a82e2926a88d",
       "slug": "indian-rosewood-cutting-bord-wxwt67",
       "name": "Indian Rosewood cutting bord",
-      "name_translations": {},
+      "name_translations": {
+        "en": "Indian Rosewood cutting bord",
+        "he": "קרש חיתוך מעץ סיסם הודי"
+      },
       "description": "<p>Indian Rosewood cutting bord</p>",
       "short_description": null,
       "sku": null,
@@ -118,7 +130,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-wxwt67",
       "categories": [],
-      "updated_at": "2026-04-23T16:29:19.279Z"
+      "updated_at": "2026-05-26T07:51:30.697Z"
     }
   ]
 }
