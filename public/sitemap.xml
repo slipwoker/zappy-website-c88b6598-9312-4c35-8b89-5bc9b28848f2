@@ -8,6 +8,7 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com" />
   </url>
   <url>
@@ -17,6 +18,17 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com" />
   </url>
   <url>
@@ -26,6 +38,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/craftsmanship" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/craftsmanship" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/craftsmanship" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/craftsmanship" />
   </url>
   <url>
@@ -35,6 +48,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/craftsmanship" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/craftsmanship" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/craftsmanship" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/craftsmanship" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/craftsmanship</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/craftsmanship" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/craftsmanship" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/craftsmanship" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/craftsmanship" />
   </url>
   <url>
@@ -44,6 +68,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/gallery" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/gallery" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/gallery" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/gallery" />
   </url>
   <url>
@@ -53,6 +78,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/gallery" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/gallery" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/gallery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/gallery" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/gallery</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/gallery" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/gallery" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/gallery" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/gallery" />
   </url>
   <url>
@@ -62,6 +98,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/contact" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/contact" />
   </url>
   <url>
@@ -71,6 +108,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/contact" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/contact" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/contact</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/contact" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/contact" />
   </url>
   <url>
@@ -80,6 +128,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/products" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/products" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/products" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/products" />
   </url>
   <url>
@@ -89,6 +138,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/products" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/products" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/products" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/products</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/products" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/products" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/products" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/products" />
   </url>
   <url>
@@ -98,6 +158,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/cart" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/cart" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/cart" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/cart" />
   </url>
   <url>
@@ -107,6 +168,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/cart" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/cart" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/cart" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/cart" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/cart</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/cart" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/cart" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/cart" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/cart" />
   </url>
   <url>
@@ -116,6 +188,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/checkout" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/checkout" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/checkout" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/checkout" />
   </url>
   <url>
@@ -125,6 +198,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/checkout" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/checkout" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/checkout" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/checkout" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/checkout</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/checkout" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/checkout" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/checkout" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/checkout" />
   </url>
   <url>
@@ -134,6 +218,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/login" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/login" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/login" />
   </url>
   <url>
@@ -143,6 +228,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/login" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/login" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/login</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/login" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/login" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/login" />
   </url>
   <url>
@@ -152,6 +248,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/account" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/account" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/account" />
   </url>
   <url>
@@ -161,6 +258,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/account" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/account" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/account" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/account</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/account" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/account" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/account" />
   </url>
   <url>
@@ -170,6 +278,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/order-success" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/order-success" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/order-success" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/order-success" />
   </url>
   <url>
@@ -179,6 +288,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/order-success" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/order-success" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/order-success" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/order-success" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/order-success</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/order-success" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/order-success" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/order-success" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/order-success" />
   </url>
   <url>
@@ -188,6 +308,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/product/:slug" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/product/:slug" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/product/:slug" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/product/:slug" />
   </url>
   <url>
@@ -197,6 +318,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/product/:slug" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/product/:slug" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/product/:slug" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/product/:slug" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/product/:slug</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/product/:slug" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/product/:slug" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/product/:slug" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/product/:slug" />
   </url>
   <url>
@@ -206,6 +338,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/category/:slug" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/category/:slug" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/category/:slug" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/category/:slug" />
   </url>
   <url>
@@ -215,6 +348,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/category/:slug" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/category/:slug" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/category/:slug" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/category/:slug" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/category/:slug</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/category/:slug" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/category/:slug" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/category/:slug" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/category/:slug" />
   </url>
   <url>
@@ -224,6 +368,7 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/privacy" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/privacy" />
   </url>
   <url>
@@ -233,6 +378,17 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/privacy" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/privacy" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/privacy</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/privacy" />
   </url>
   <url>
@@ -242,6 +398,7 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/terms" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/terms" />
   </url>
   <url>
@@ -251,6 +408,17 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/terms" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/terms" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/terms</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/terms" />
   </url>
   <url>
@@ -260,6 +428,7 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/accessibility" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/accessibility" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/accessibility" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/accessibility" />
   </url>
   <url>
@@ -269,6 +438,17 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/accessibility" />
     <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/accessibility" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/accessibility" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/accessibility" />
+  </url>
+  <url>
+    <loc>https://nwooda.com/de/accessibility</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nwooda.com/accessibility" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://nwooda.com/he/accessibility" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://nwooda.com/de/accessibility" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nwooda.com/accessibility" />
   </url>
   <url>
