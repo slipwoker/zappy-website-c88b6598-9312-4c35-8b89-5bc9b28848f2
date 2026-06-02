@@ -79,14 +79,21 @@ handmade craft shops — Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -95,13 +102,6 @@ handmade craft shops — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -596,14 +596,21 @@ Craftsmanship — Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -612,13 +619,6 @@ Craftsmanship — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -1109,14 +1109,21 @@ Gallery — Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -1125,13 +1132,6 @@ Gallery — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -1442,14 +1442,21 @@ Contact — Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -1458,13 +1465,6 @@ Contact — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -1825,14 +1825,21 @@ Products - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -1841,13 +1848,6 @@ Products - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -2026,14 +2026,21 @@ Cart - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -2042,13 +2049,6 @@ Cart - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -2203,14 +2203,21 @@ Checkout - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -2219,13 +2226,6 @@ Checkout - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -2566,14 +2566,21 @@ Login - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -2582,13 +2589,6 @@ Login - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -2750,14 +2750,21 @@ My Account - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -2766,13 +2773,6 @@ My Account - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -2830,11 +2830,11 @@ Edit Profile
 
 
 
-Name:
+Name :
 -
 
 
-Phone:
+Phone :
 -
 
 
@@ -3089,14 +3089,21 @@ Order Received! - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -3105,13 +3112,6 @@ Order Received! - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -3290,14 +3290,21 @@ Return Policy - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -3306,13 +3313,6 @@ Return Policy - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -3334,7 +3334,7 @@ All Products
 # Return Policy
 
 
-Last Updated: 5/25/2026
+Last Updated: 6/2/2026
 
 
 
@@ -3520,14 +3520,21 @@ Product Details - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -3536,13 +3543,6 @@ Product Details - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -3699,14 +3699,21 @@ Products - Natural Wood Art
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -3715,13 +3722,6 @@ Products - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -3881,14 +3881,21 @@ Privacy Policy
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -3897,13 +3904,6 @@ Privacy Policy
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -4127,14 +4127,21 @@ Accessibility Statement
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -4143,13 +4150,6 @@ Accessibility Statement
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
@@ -4379,14 +4379,21 @@ Terms & Conditions
 
 - Home
 
-- Products All Products
-
-
-
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Contact
+0
+
+
+
+
+
 
 
 
@@ -4395,13 +4402,6 @@ Terms & Conditions
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
-
-0
-
-
-
-
-
 
 
 
