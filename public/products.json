@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-06-04T16:41:20.740Z",
+  "generated_at": "2026-06-04T16:42:07.238Z",
   "base_url": "https://nwooda.com",
   "currency": "USD",
   "count": 4,
@@ -116,7 +116,7 @@
     },
     {
       "id": "05ae8d26-1904-40c1-aa30-a82e2926a88d",
-      "slug": "indian-rosewood-cutting-bord-d46yf8",
+      "slug": "indian-rosewood-cutting-bord-nzusha",
       "name": "Indian Rosewood cutting bord",
       "name_translations": {
         "de": "Schneidebrett aus indischem Palisander",
@@ -143,13 +143,15 @@
         "https://nwooda.com/assets/product-1780590521557-t6zi39.webp",
         "https://nwooda.com/assets/product-1780590529526-jgh0t.webp",
         "https://nwooda.com/assets/product-1780590538292-yzsrns.webp",
-        "https://nwooda.com/assets/product-1780590546635-2sdu5.webp"
+        "https://nwooda.com/assets/product-1780590546635-2sdu5.webp",
+        "https://nwooda.com/assets/product-1780591269159-40zte.webp",
+        "https://nwooda.com/assets/product-1780591277137-1wppj.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-d46yf8",
+      "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-nzusha",
       "categories": [],
-      "updated_at": "2026-06-04T16:29:58.788Z"
+      "updated_at": "2026-06-04T16:41:36.013Z"
     }
   ]
 }
