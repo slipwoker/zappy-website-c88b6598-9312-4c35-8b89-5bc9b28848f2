@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-06-04T16:18:48.020Z",
+  "generated_at": "2026-06-04T16:30:31.094Z",
   "base_url": "https://nwooda.com",
   "currency": "USD",
   "count": 4,
@@ -112,12 +112,12 @@
     },
     {
       "id": "05ae8d26-1904-40c1-aa30-a82e2926a88d",
-      "slug": "indian-rosewood-cutting-bord-wxwt67",
+      "slug": "indian-rosewood-cutting-bord-d46yf8",
       "name": "Indian Rosewood cutting bord",
       "name_translations": {
         "de": "Schneidebrett aus indischem Palisander",
         "en": "Indian Rosewood cutting bord",
-        "fr": "planche à découper en palissandre indien",
+        "fr": "Planche à découper en palissandre indien",
         "he": "קרש חיתוך מעץ סיסם הודי"
       },
       "description": "<p>Indian Rosewood cutting bord</p>",
@@ -134,13 +134,18 @@
         "https://nwooda.com/assets/product-1774867293223-tdzil.webp",
         "https://nwooda.com/assets/product-1776961709370-rdlalj.webp",
         "https://nwooda.com/assets/product-1776961726281-1jpbkn.webp",
-        "https://nwooda.com/assets/product-1776961743082-5qw2oa.webp"
+        "https://nwooda.com/assets/product-1776961743082-5qw2oa.webp",
+        "https://nwooda.com/assets/product-1780590513438-15v3sj.webp",
+        "https://nwooda.com/assets/product-1780590521557-t6zi39.webp",
+        "https://nwooda.com/assets/product-1780590529526-jgh0t.webp",
+        "https://nwooda.com/assets/product-1780590538292-yzsrns.webp",
+        "https://nwooda.com/assets/product-1780590546635-2sdu5.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-wxwt67",
+      "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-d46yf8",
       "categories": [],
-      "updated_at": "2026-05-26T08:05:53.150Z"
+      "updated_at": "2026-06-04T16:29:58.788Z"
     }
   ]
 }
