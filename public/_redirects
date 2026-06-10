@@ -1,82 +1,13 @@
 # Clean URL redirects for Render static hosting
-# Generated: 2026-06-10T13:40:33.451Z
-# NOTE: Render uses render.yaml for routing, not _redirects (that is Netlify)
-# This file is kept for reference only
-
-/craftsmanship  /craftsmanship.html  200!
-/gallery  /gallery.html  200!
-/contact  /contact.html  200!
-/products  /products.html  200!
-/cart  /cart.html  200!
-/checkout  /checkout.html  200!
-/login  /login.html  200!
-/account  /account.html  200!
-/order-success  /order-success.html  200!
-/return-policy  /return-policy.html  200!
-/privacy  /privacy.html  200!
-/accessibility  /accessibility.html  200!
-/terms  /terms.html  200!
-
-# Language slug rewrites for SEO
-/he  /he/index.html  200!
-/he/craftsmanship  /he/craftsmanship.html  200!
-/he/gallery  /he/gallery.html  200!
-/he/contact  /he/contact.html  200!
-/he/products  /he/products.html  200!
-/he/cart  /he/cart.html  200!
-/he/checkout  /he/checkout.html  200!
-/he/login  /he/login.html  200!
-/he/account  /he/account.html  200!
-/he/order-success  /he/order-success.html  200!
-/he/return-policy  /he/return-policy.html  200!
-/he/privacy  /he/privacy.html  200!
-/he/accessibility  /he/accessibility.html  200!
-/he/terms  /he/terms.html  200!
-/he  /he/index.html  200!
-/de  /de/index.html  200!
-/de/craftsmanship  /de/craftsmanship.html  200!
-/de/gallery  /de/gallery.html  200!
-/de/contact  /de/contact.html  200!
-/de/products  /de/products.html  200!
-/de/cart  /de/cart.html  200!
-/de/checkout  /de/checkout.html  200!
-/de/login  /de/login.html  200!
-/de/account  /de/account.html  200!
-/de/order-success  /de/order-success.html  200!
-/de/return-policy  /de/return-policy.html  200!
-/de/privacy  /de/privacy.html  200!
-/de/accessibility  /de/accessibility.html  200!
-/de/terms  /de/terms.html  200!
-/de  /de/index.html  200!
-/fr  /fr/index.html  200!
-/fr/craftsmanship  /fr/craftsmanship.html  200!
-/fr/gallery  /fr/gallery.html  200!
-/fr/contact  /fr/contact.html  200!
-/fr/products  /fr/products.html  200!
-/fr/cart  /fr/cart.html  200!
-/fr/checkout  /fr/checkout.html  200!
-/fr/login  /fr/login.html  200!
-/fr/account  /fr/account.html  200!
-/fr/order-success  /fr/order-success.html  200!
-/fr/return-policy  /fr/return-policy.html  200!
-/fr/privacy  /fr/privacy.html  200!
-/fr/accessibility  /fr/accessibility.html  200!
-/fr/terms  /fr/terms.html  200!
-/fr  /fr/index.html  200!
-
-# Legal pages - redirect old .html URLs to friendly URLs
-/privacy.html  /privacy  301
-/accessibility.html  /accessibility  301
-/terms.html  /terms  301
-
-/  /index.html  200!
+# Generated: 2026-06-10T15:35:25.947Z
+# Generated during publish asset refresh
 
 # Dynamic routes - serve dedicated HTML templates for dynamic paths
 /product/*  /product.html  200!
 /category/*  /category.html  200!
-/he/product/*  /he/product/index.html  200!
-/he/category/*  /he/category/index.html  200!
-/de/product/*  /de/product/index.html  200!
-/de/category/*  /de/category/index.html  200!
-/fr/product/*  /fr/product/index.html  200!
-/fr/category/*  /fr/category/index.html  200!
+/he/product/*  /product.html  200!
+/he/category/*  /category.html  200!
+/de/product/*  /product.html  200!
+/de/category/*  /category.html  200!
+/fr/product/*  /product.html  200!
+/fr/category/*  /category.html  200!
