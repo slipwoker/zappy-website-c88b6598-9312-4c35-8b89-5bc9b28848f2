@@ -6,21 +6,17 @@
 
 ## Pages
 
-### Home
+### handmade craft shops — Natural Wood Art
 https://nwooda.com
 Explore handmade craft shops reimagined — olive wood, acacia, and epoxy resin fused into cutting boards and mezuzahs. Shop unique handmade gifts online today.
 
-### Craftsmanship
+### Craftsmanship — Natural Wood Art
 https://nwooda.com/craftsmanship
 Craftsmanship | Natural Wood Art. handmade craft shops
 
-### Gallery
+### Gallery — Natural Wood Art
 https://nwooda.com/gallery
 Gallery | Natural Wood Art. handmade craft shops
-
-### Contact
-https://nwooda.com/contact
-Contact | Natural Wood Art. handmade craft shops
 
 ### Products
 https://nwooda.com/products
@@ -38,21 +34,28 @@ Checkout
 https://nwooda.com/login
 Customer Login
 
-### Account
+### My Account
 https://nwooda.com/account
 My Account
 
-### Order Success
+### Order Received!
 https://nwooda.com/order-success
 Thank you for your order
 
-### Product Detail
+### Product Details
 https://nwooda.com/product/:slug
 Product Details - Natural Wood Art
 
-### Category
+### Products
 https://nwooda.com/category/:slug
 Products - Natural Wood Art
+
+### Page
+https://nwooda.com/menu-group-1781105071178
+
+### Contact — Natural Wood Art
+https://nwooda.com/contact
+Contact | Natural Wood Art. handmade craft shops
 
 ## Legal & Policy
 
