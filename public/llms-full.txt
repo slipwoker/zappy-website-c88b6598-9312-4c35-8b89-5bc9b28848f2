@@ -84,7 +84,12 @@ handmade craft shops — Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -597,7 +602,12 @@ Craftsmanship — Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -1107,7 +1117,12 @@ Gallery — Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -1433,7 +1448,12 @@ Products - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -1634,7 +1654,12 @@ Cart - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -1811,7 +1836,12 @@ Checkout - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -2174,7 +2204,12 @@ Login - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -2358,7 +2393,12 @@ My Account - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -2697,7 +2737,12 @@ Order Received! - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -2898,7 +2943,12 @@ Return Policy - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -2937,7 +2987,7 @@ All Products
 # Return Policy
 
 
-Last Updated: 6/2/2026
+Last Updated: 6/13/2026
 
 
 
@@ -3128,7 +3178,12 @@ Product Details - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -3307,7 +3362,12 @@ Products - Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -3489,7 +3549,12 @@ Privacy Policy
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -3735,7 +3800,12 @@ Accessibility Statement
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -3987,7 +4057,12 @@ Terms & Conditions
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact
@@ -4277,7 +4352,12 @@ Contact — Natural Wood Art
 
 
 - Craftsmanship
-- Gallery
+
+- Products Products
+
+
+
+
 - Products
 - New Menu
 - Contact

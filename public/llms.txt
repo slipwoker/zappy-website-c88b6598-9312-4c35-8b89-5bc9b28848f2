@@ -34,19 +34,19 @@ Checkout
 https://nwooda.com/login
 Customer Login
 
-### My Account
+### Account
 https://nwooda.com/account
 My Account
 
-### Order Received!
+### Order Success
 https://nwooda.com/order-success
 Thank you for your order
 
-### Product Details
+### Product Detail
 https://nwooda.com/product/:slug
 Product Details - Natural Wood Art
 
-### Products
+### Category
 https://nwooda.com/category/:slug
 Products - Natural Wood Art
 

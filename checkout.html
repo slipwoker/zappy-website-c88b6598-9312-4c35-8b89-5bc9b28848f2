@@ -1092,8 +1092,6 @@ html[dir="rtl"] body {
 
 </style>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
           <style id="zappy-cta-mobile-style">
             /* Hide CTA list item on desktop (tablets and up) */
             @media (min-width: 769px) {
@@ -1530,6 +1528,8 @@ html[dir="rtl"] body {
               });
             })();
           </script>
+        
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-widget-visibility">
@@ -1591,16 +1591,16 @@ html[dir="rtl"] body {
   <nav class="navbar">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" data-i18n-aria-label="home_aria_label_118">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
     <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
-      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="+972505588259" aria-label="Call" data-i18n-aria-label="home_aria_label_119">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
 
@@ -1611,7 +1611,20 @@ html[dir="rtl"] body {
       </a>
     </div>
 
-    <ul class="nav-menu" id="navMenu"><li><a href="/craftsmanship" data-i18n="home_nav_92">Craftsmanship</a></li><li><a href="/gallery">Gallery</a></li><li><a href="/products">Products</a></li><li class="menu-group-item"><span class="menu-group-title">New Menu</span></li><li><a href="/contact" data-i18n="home_nav_94">Contact</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="Login"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="Cart"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
+    <ul class="nav-menu" id="navMenu"><li><a href="/craftsmanship" data-i18n="home_nav_92">Craftsmanship</a></li>
+    <li class="menu-item-has-children zappy-products-dropdown">
+      <a href="/en/gallery">
+        Products
+        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"></path>
+        </svg>
+      </a>
+      <ul class="sub-menu" id="zappy-nav-category-links">
+        <li><a href="/en/gallery" data-i18n="ecom_products">Products</a></li>
+        <!-- Categories will be loaded dynamically -->
+      </ul>
+    </li>
+  <li><a href="/products" data-i18n="cart_nav_27">Products</a></li><li class="menu-group-item"><span class="menu-group-title" data-i18n="new_span_125">New Menu</span></li><li><a href="/contact" data-i18n="home_nav_94">Contact</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="Login"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="Cart"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
     <input type="text" class="nav-search-input" id="nav-search-input" placeholder="Search products..." autocomplete="off">
     <button class="nav-search-btn" id="nav-search-btn" title="Search">
       <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -1620,7 +1633,7 @@ html[dir="rtl"] body {
   </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button></div>
 <div class="lang-switcher" data-no-icon-edit="true" data-icon-color="#F7F1E7" style="position:relative;display:inline-flex;align-items:center;z-index:1000;margin:0 4px;">
   <button class="lang-switcher-current" aria-haspopup="true" aria-expanded="false" data-no-icon-edit="true" style="display:flex;align-items:center;padding:8px;background:transparent;border:none;border-radius:6px;cursor:pointer;color:inherit;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;" data-no-icon-edit="true"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;" data-no-icon-edit="true"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"></path></svg>
   </button>
   <div class="lang-switcher-dropdown" role="menu" style="position:absolute;top:100%;right:0;margin-top:4px;min-width:140px;background:white;border:1px solid rgba(128,128,128,0.2);border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:all 0.2s ease;z-index:1001;"><button class="lang-option" data-lang="he">🇮🇱 עברית</button>
         <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
@@ -1705,7 +1718,7 @@ html[dir="rtl"] body {
                   <span class="field-error" id="shipping-method-error"></span>
                   <div id="shipping-address-section" style="display:none">
                     <div class="checkout-form-fields">
-                      <input type="hidden" id="shipping-country" value>
+                      <input type="hidden" id="shipping-country" value="">
                       <div class="input-wrapper input-full" id="state-wrapper" style="display:none">
                         <label for="shipping-state" class="checkout-field-label" data-i18n="ecom_stateProvince">State / Province *</label>
                         <div class="checkout-select-wrapper">
@@ -1738,7 +1751,7 @@ html[dir="rtl"] body {
                       </div>
                       <div class="save-address-wrapper">
                         <label class="save-address-label">
-                          <input type="checkbox" id="save-address-checkbox" class="save-address-checkbox">
+                          <input type="checkbox" id="save-address-checkbox" class="save-address-checkbox" />
                           <span data-i18n="ecom_saveAddressForNextTime">Save this address for next time</span>
                         </label>
                       </div>
@@ -1818,7 +1831,7 @@ html[dir="rtl"] body {
               </div>
               <div class="terms-checkbox-wrapper">
                 <label class="terms-checkbox-label">
-                  <input type="checkbox" id="terms-checkbox" class="terms-checkbox">
+                  <input type="checkbox" id="terms-checkbox" class="terms-checkbox" />
                   <span><span data-i18n="ecom_agreeToTerms">I agree to the</span> <a href="/terms" target="_blank" class="terms-link" data-i18n="ecom_termsAndConditions">Terms and Conditions</a></span>
                 </label>
                 <span class="field-error" id="terms-checkbox-error"></span>
@@ -1837,7 +1850,7 @@ html[dir="rtl"] body {
         </section>
       
   </main>
-  <footer class="site-footer"><div class="footer-container"><div class="footer-top"><div class="footer-col footer-brand"><input type="checkbox" id="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true"><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1774790825638-m4cfqy4vl" data-element-type="image" data-zappy-zoom-wrapper-width="202px" data-zappy-zoom-wrapper-height="201px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="cursor: pointer; position: relative !important; overflow: hidden !important; width: 202px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: auto !important; height: 201px !important; display: block !important;" data-zappy-click-action="expand"><img src="/assets/natural-wood-art-handmade-crafts-woodworking-service-1775560440674-zu2fg6.webp?v=1775560443010" alt="Natural Wood Art" class="logo" data-element-type="image" data-element-id="img-1774790825638-m4cfqy4vl" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; width: 100% !important; max-width: none !important; max-height: none !important; height: 100.299% !important; margin: 0px !important; left: 0% !important; top: -0.149254% !important; position: absolute !important;" data-zappy-zoom="0.8" data-zappy-original-width="202" data-zappy-original-height="201" data-zappy-object-position="50% 50%" data-zappy-click-action="expand" data-zappy-footer-image="true" data-i18n-alt="home_alt_112"></div></label><p class="footer-tagline" data-i18n="home_p_44">Handcrafted with intention. Built to last generations.</p><p class="footer-desc" data-i18n="home_p_45">Every piece we create carries the warmth of natural wood and the soul of the maker's hand — designed for homes that value beauty, meaning, and craft.</p></div><div class="footer-col footer-links"><h4 class="footer-heading" data-i18n="home_h4_17"><span class="heading-accent"></span>Explore</h4><ul class="footer-nav"><li><a href="/craftsmanship" data-i18n="home_link_69"><i class="fas fa-chevron-right footer-link-icon"></i>Craftsmanship</a></li><li><a href="/gallery" data-i18n="home_link_70"><i class="fas fa-chevron-right footer-link-icon"></i>Gallery</a></li><li><a href="/contact" data-i18n="home_link_71"><i class="fas fa-chevron-right footer-link-icon"></i>Contact</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading" data-i18n="home_h4_18"><span class="heading-accent"></span>Get in Touch</h4><ul class="footer-contact-list" style><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1774790825637-gvs198v4j" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="mailto:support@nwooda.com" data-i18n="home_link_72">support@nwooda.com</a></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1774790825637-dpowfiikt" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="tel:+972505588259">+972505588259</a></li><li><a href="/" data-i18n="home_link_73"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span><address>&nbsp; &nbsp;4522570, ISRAEL</address></a></li></ul></div><div class="footer-col footer-social-col"><h4 class="footer-heading" data-i18n="home_h4_19"><span class="heading-accent"></span>Follow Along</h4><p class="footer-social-desc" data-i18n="home_p_46">Join our community of craft lovers and see our latest work.</p><div class="footer-social-links"><a href="https://facebook.com/share/1cDimQEnKZ" aria-label="Facebook" data-i18n-aria-label="home_aria_label_120"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="home_aria_label_121"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1774790825637-flwjn36v9" data-icon-type="fontawesome"></i></a><a href="https://wa.me/972505588259" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_122"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1774790825637-hthurw0im" data-icon-type="fontawesome"></i></a></div></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copyright" data-i18n="home_p_47">© 2026 Natural Wood Art. All rights reserved.</p><div class="footer-legal"><a href="/privacy" data-i18n="home_link_74">Privacy Policy</a><span class="legal-sep">·</span><a href="/terms" data-i18n="home_link_75">Terms &amp; Conditions</a><span class="separator">|</span>
+  <footer class="site-footer"><div class="footer-container"><div class="footer-top"><div class="footer-col footer-brand"><input type="checkbox" id="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true"><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1774790825638-m4cfqy4vl" data-element-type="image" data-zappy-zoom-wrapper-width="202px" data-zappy-zoom-wrapper-height="201px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="cursor: pointer; position: relative !important; overflow: hidden !important; width: 202px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: auto !important; height: 201px !important; display: block !important;" data-zappy-click-action="expand"><img src="/assets/natural-wood-art-handmade-crafts-woodworking-service-1775560440674-zu2fg6.webp?v=1775560443010" alt="Natural Wood Art" class="logo" data-element-type="image" data-element-id="img-1774790825638-m4cfqy4vl" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; width: 100% !important; max-width: none !important; max-height: none !important; height: 100.299% !important; margin: 0px !important; left: 0% !important; top: -0.149254% !important; position: absolute !important;" data-zappy-zoom="0.8" data-zappy-original-width="202" data-zappy-original-height="201" data-zappy-object-position="50% 50%" data-zappy-click-action="expand" data-zappy-footer-image="true" data-i18n-alt="home_alt_112"></div></label><p class="footer-tagline" data-i18n="home_p_44">Handcrafted with intention. Built to last generations.</p><p class="footer-desc" data-i18n="home_p_45">Every piece we create carries the warmth of natural wood and the soul of the maker's hand — designed for homes that value beauty, meaning, and craft.</p></div><div class="footer-col footer-links"><h4 class="footer-heading" data-i18n="home_h4_17"><span class="heading-accent"></span>Explore</h4><ul class="footer-nav"><li><a href="/craftsmanship" data-i18n="home_link_69"><i class="fas fa-chevron-right footer-link-icon"></i>Craftsmanship</a></li><li><a href="/gallery" data-i18n="home_link_70"><i class="fas fa-chevron-right footer-link-icon"></i>Gallery</a></li><li><a href="/contact" data-i18n="home_link_71"><i class="fas fa-chevron-right footer-link-icon"></i>Contact</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading" data-i18n="home_h4_18"><span class="heading-accent"></span>Get in Touch</h4><ul class="footer-contact-list" ><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1774790825637-gvs198v4j" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="mailto:support@nwooda.com" data-i18n="home_link_72">support@nwooda.com</a></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1774790825637-dpowfiikt" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="tel:+972505588259">+972505588259</a></li><li><a href="/" data-i18n="home_link_73"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span><address>&nbsp; &nbsp;4522570, ISRAEL</address></a></li></ul></div><div class="footer-col footer-social-col"><h4 class="footer-heading" data-i18n="home_h4_19"><span class="heading-accent"></span>Follow Along</h4><p class="footer-social-desc" data-i18n="home_p_46">Join our community of craft lovers and see our latest work.</p><div class="footer-social-links"><a href="https://facebook.com/share/1cDimQEnKZ" aria-label="Facebook" data-i18n-aria-label="home_aria_label_120"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="home_aria_label_121"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1774790825637-flwjn36v9" data-icon-type="fontawesome"></i></a><a href="https://wa.me/972505588259" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_122"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1774790825637-hthurw0im" data-icon-type="fontawesome"></i></a></div></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copyright" data-i18n="home_p_47">© 2026 Natural Wood Art. All rights reserved.</p><div class="footer-legal"><a href="/privacy" data-i18n="home_link_74">Privacy Policy</a><span class="legal-sep">·</span><a href="/terms" data-i18n="home_link_75">Terms &amp; Conditions</a><span class="separator">|</span>
             <a href="/return-policy" aria-label="Return Policy" data-i18n="home_link_76" data-i18n-aria-label="home_aria_label_123">
               Return Policy
             </a><span class="legal-sep">·</span><a href="/accessibility" data-i18n="home_link_77">Accessibility</a><span class="legal-sep">·</span><a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="home_link_78">Generated by Zappy</a></div></div></div></footer>
@@ -1964,6 +1977,7 @@ html[dir="rtl"] body {
     }
   })();
   </script>
+  <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
 <!-- i18next Multi-Language Support -->
 <script>
@@ -2132,6 +2146,10 @@ html[dir="rtl"] body {
       "ecom_noFeaturedProducts": "No featured products yet. Check out all our products!",
       "ecom_noOrders": "No orders yet",
       "ecom_noProducts": "No products to display",
+      "ecom_previewEmptyStoreTitle": "Your store is ready for products",
+      "ecom_previewEmptyStoreBody": "Add your first product in Store Manager to see it appear here.",
+      "ecom_previewEmptyStoreButton": "Add products",
+      "ecom_previewOnlyBadge": "Preview only",
       "ecom_noShippingMethods": "No shipping options available",
       "ecom_notLoggedIn": "Not Logged In",
       "ecom_orderConfirmation": "A confirmation email has been sent to you",
@@ -2260,12 +2278,12 @@ html[dir="rtl"] body {
       "home_p_27": "<b>The Fusion of Nature and Art: Olive Wood and Epoxy Resin&nbsp;\nOlive wood and epoxy resin products represent perfect harmony between ancient tradition and modern innovation.&nbsp;\nBy combining the raw and organic beauty of centuries-old olive trees with the smooth and versatile nature of quality resin, we create unique handcrafted artworks that are both durable and stunning with distinctive aesthetics.&nbsp;</b>\n<b>Since no two olive wood boards are identical, each item - from cutting boards to mezuzahs and art pieces -&nbsp;</b>\n<b>is a unique masterpiece.&nbsp;</b>\n<b>The resin integrates with the \"wild edges\"&nbsp;</b>\n<b>(the natural line) of the wood, ensuring that no two pieces will ever be identical.\n</b>",
       "home_p_28": "למד עוד",
       "home_p_29": "Our Craft",
-      "home_p_30": "&nbsp;Every creation we make begins with respect for carefully selected natural materials,&nbsp;\n\n\ndesigned and high-quality. This is craftsmanship at its finest.",
+      "home_p_30": "Every creation we make begins with respect for selected natural materials,&nbsp;\ndesigned and high-quality. This is craftsmanship at its finest.",
       "home_p_31": "We use only the finest olive and acacia wood — each plank is selected for its unique structural character, natural color variation, and long-term durability. No two creations are identical, because no two trees are the same.",
       "home_p_32": "Our special epoxy resin is hand-poured into the natural wood channels, creating luminous veins of color that reflect flowing water. Each pour is carefully timed, layered and cured to achieve a smooth glass-like finish that is food-safe, child-safe and built to last for generations.",
       "home_p_33": "Every edge is hand-smoothed gradually. Every surface is oiled, polished and inspected before it leaves our workshop. From natural cutting boards to handcrafted mezuzahs, the finish is where intention becomes creation.",
       "home_p_34": "Signature Works",
-      "home_p_35": "No two pieces from Natural Wood Art are alike. The grain movement of olive and acacia, the organic flow of blue epoxy resin rivers, and the quiet decisions made during hand-finishing — together they make every cutting board, mezuzah, and decorative object a singular artifact. These are not mass-produced goods; they are handmade gifts shaped by the material itself.",
+      "home_p_35": "No two creations from Natural Wood Art are identical. The grain movement of olive and acacia wood, the organic flow of epoxy resin, and the hand-finished craftsmanship —\n&nbsp;together transform each cutting board, mezuzah and decorative object into a unique piece.&nbsp;\nThese are not mass-produced products;&nbsp;\nthey are handcrafted gifts designed by the creator himself.",
       "home_p_36": "Explore the Collection",
       "home_p_37": "What Our Customers Say",
       "home_p_38": "\"I gave this mezuzah as a wedding gift and the couple was moved to tears. The way the olive wood grain flows into the blue resin — it looks like a river running through ancient stone. You can feel the soul in every inch of it. Truly a handmade gift unlike anything online.\"",
@@ -2338,9 +2356,9 @@ html[dir="rtl"] body {
       "home_alt_99": "Handcrafted olive wood cutting board with blue epoxy resin and sculptural mezuzah on pale stone",
       "home_div_82": "Loading products...",
       "home_div_83": "Loading products...",
-      "home_div_84": "<strong>River Cutting Boards</strong>\n            <span>Olive & acacia wood with flowing epoxy resin channels</span>",
-      "home_div_85": "<strong>Handcrafted Mezuzahs</strong>\n            <span>Large-format olive wood Judaica with resin inlay</span>",
-      "home_div_86": "<strong>Decorative Objects</strong>\n            <span>Serving boards, art panels, and bespoke commissions</span>",
+      "home_div_84": "Cutting boards&nbsp;\n            Olive and acacia wood with flowing&nbsp; \n\nchannels of epoxy resin&nbsp;",
+      "home_div_85": "Handmade Mezuzahs\n            Olive wood Judaica in unique format with colorful epoxy resin inlay",
+      "home_div_86": "Decorative Items\nArt objects and special orders",
       "home_div_87": "<strong class=\"home-testimonials-name\">Rachel M.</strong>\n            <span class=\"home-testimonials-context\">Wedding Gift</span>",
       "home_div_88": "<strong class=\"home-testimonials-name\">Daniel K.</strong>\n            <span class=\"home-testimonials-context\">Home Gift</span>",
       "home_div_89": "<strong class=\"home-testimonials-name\">Miriam S.</strong>\n            <span class=\"home-testimonials-context\">Judaica Collector</span>",
@@ -3732,6 +3750,10 @@ html[dir="rtl"] body {
       "ecom_noFeaturedProducts": "עוד לא נבחרו מוצרים מומלצים. צפו בכל המוצרים שלנו!",
       "ecom_noOrders": "אין עדיין הזמנות",
       "ecom_noProducts": "אין מוצרים להצגה כרגע",
+      "ecom_previewEmptyStoreTitle": "החנות שלך מוכנה למוצרים",
+      "ecom_previewEmptyStoreBody": "הוסף את המוצר הראשון במנהל החנות כדי לראות אותו מופיע כאן.",
+      "ecom_previewEmptyStoreButton": "הוסף מוצרים",
+      "ecom_previewOnlyBadge": "תצוגה מקדימה בלבד",
       "ecom_noShippingMethods": "אין אפשרויות משלוח זמינות",
       "ecom_notLoggedIn": "לא מחובר",
       "ecom_orderConfirmation": "אישור הזמנה נשלח לאימייל שלך",
@@ -3860,13 +3882,13 @@ html[dir="rtl"] body {
       "home_p_27": "<b>המיזוג של טבע ואמנות: עץ זית ושרף אפוקסי&nbsp;\nמוצרי עץ זית ושרף אפוקסי מייצגים הרמוניה מושלמת בין מסורת עתיקה לחדשנות מודרנית.&nbsp;\nעל ידי שילוב היופי הגולמי והאורגני של עצי זית בני מאות שנים עם הטבע החלק והרב-תכליתי של שרף איכותי, אנחנו יוצרים יצירות אמנות ייחודיות בעבודת יד שהן עמידות ומדהימות כאחד ובעלות אסתטיקה ייחודית.&nbsp;</b>\n<b>מכיוון ששני לוחות עץ זית אינם זהים, כל פריט - מקרשי חיתוך ועד מזוזות ופרטי האמנות -&nbsp;</b>\n<b>הוא יצירת מופת ייחודית.&nbsp;</b>\n<b>השרף משתלב עם ה \"שוליים הפראיים\"&nbsp;</b>\n<b>(הקו הטבעי) של העץ, ומבטיח ששני חלקים לא יהיו זהים לעולם.\n</b>",
       "home_p_28": "למד עוד",
       "home_p_29": "המלאכה שלנו",
-      "home_p_30": "&nbsp;כל יצירה שאנו יוצרים מתחילה בכבוד לחומרים טבעיים&nbsp; נבחרים,&nbsp;\n\n\nמעוצבים ואיכותיים . זוהי מלאכת יד במיטבה.",
+      "home_p_30": "כל יצירה שאנו יוצרים מתחילה בכבוד לחומרים טבעיים נבחרים,&nbsp;\nמעוצבים ואיכותיים . זוהי מלאכת יד במיטבה.",
       "home_p_31": "אנו מקפידים רק על עץ זית ושיטה מהמשובחים ביותר — כל קרש נבחר בשל אופי המבנה הייחודי שלו, וריאציית הצבע הטבעי והעמידות הארוכת טווח. אין שתי יצירות זהות, כי אין שני עצים זהים.",
       "home_p_32": "שרף האפוקסי המיוחד שלנו נמזג בעבודת יד לתוך תעלות העץ הטבעיות, ויוצר ורידים זוהרים של צבע המשקפים מים זורמים. כל יציקה מתוזמנת בקפידה, מרובדת ומתקשה כדי להשיג גימור חלק כמו זכוכית, בטוח למזון ולילדים ועמיד לדורות.",
       "home_p_33": "כל קצה מוחלק בעבודת יד באופן הדרגתי. כל משטח משומן, מלוטש ונבדק לפני שהוא עוזב את הסדנה שלנו. מקרשי חיתוך טבעיים ועד מזוזות בעבודת יד, הגימור הוא המקום שבו הכוונה הופכת ליצירה.",
       "home_p_34": "יצירות חתימה",
-      "home_p_35": "אין שתי יצירות מ-Natural Wood Art זהות. תנועת הגרגר של הזית והשיטה, הזרימה האורגנית של נהרות שרף אפוקסי כחולים, וההחלטות השקטות שמתקבלות במהלך הגימור בעבודת יד — יחד הם הופכים כל קרש חיתוך, מזוזה ואובייקט דקורטיבי לחפץ יחיד. אלה אינם מוצרים המיוצרים בהמוניהם; הם מתנות בעבודת יד המעוצבות על ידי החומר עצמו.",
-      "home_p_36": "גלה את הקולקציה",
+      "home_p_35": "אין שתי יצירות מ-Natural Wood Art זהות. תנועת מבנה העץ של הזית והשיטה, הזרימה האורגנית של שרף האפוקסי , והגימור בעבודת יד —\n&nbsp;יחד הופכים כל קרש חיתוך, מזוזה ואובייקט דקורטיבי לחפץ יחודי.&nbsp;\nאלה אינם מוצרים המיוצרים בהמוניהם;&nbsp;\nהם מתנות בעבודת יד המעוצבות על ידי היוצר עצמו.",
+      "home_p_36": "חקור את הקולקציה",
       "home_p_37": "מה הלקוחות שלנו אומרים",
       "home_p_38": "\"נתתי את המזוזה הזו כמתנת חתונה והזוג התרגש עד דמעות. הדרך שבה גרגר עץ הזית זורם לתוך השרף הכחול — זה נראה כמו נהר הזורם דרך אבן עתיקה. אפשר להרגיש את הנשמה בכל סנטימטר ממנה. באמת מתנה בעבודת יד שאין דומה לה באינטרנט.\"",
       "home_p_39": "\"קרש החיתוך מעץ השיטה הוא יצירת אמנות פונקציונלית. האומנות יוצאת דופן — כל קצה מגומר בצורה מושלמת, השיבוץ האפוקסי חלק כמו זכוכית. אני משתמש בו יומיומית והוא עדיין נראה כאילו הוא שייך לגלריה. שווה כל שקל עבור קנייה בעבודת יד.\"",
@@ -3938,9 +3960,9 @@ html[dir="rtl"] body {
       "home_alt_99": "קרש חיתוך מעץ זית בעבודת יד עם שרף אפוקסי כחול ומזוזה פיסולית על אבן בהירה",
       "home_div_82": "טוען מוצרים...",
       "home_div_83": "טוען מוצרים...",
-      "home_div_84": "<strong>קרשי חיתוך נהר</strong>\n            <span>עץ זית ושיטה עם תעלות שרף אפוקסי זורמות</span>",
-      "home_div_85": "מזוזות בעבודת יד\n            יודאיקה מעץ זית בפורמט גדול עם שיבוץ שרף",
-      "home_div_86": "חפצי נוי\n            קרשי הגשה, לוחות אמנות והזמנות מיוחדות",
+      "home_div_84": "קרשי חיתוך&nbsp;\n            עץ זית ושיטה עם תעלות&nbsp; \n\nזורמות של שרף אפוקסי&nbsp;",
+      "home_div_85": "מזוזות בעבודת יד\n            יודאיקה מעץ זית בפורמט ייחודי עם שיבוץ של שרף אפוקסי צבעוני",
+      "home_div_86": "חפצי נוי\nחפצי אמנות והזמנות מיוחדות",
       "home_div_87": "רחל מ.\n            מתנת חתונה",
       "home_div_88": "דניאל כ.\n            מתנה לבית",
       "home_div_89": "מרים ש.\n            אספנית יודאיקה",
@@ -5332,6 +5354,10 @@ html[dir="rtl"] body {
       "ecom_noFeaturedProducts": "No featured products yet. Check out all our products!",
       "ecom_noOrders": "No orders yet",
       "ecom_noProducts": "No products to display",
+      "ecom_previewEmptyStoreTitle": "Dein Shop ist bereit für Produkte",
+      "ecom_previewEmptyStoreBody": "Füge dein erstes Produkt im Store Manager hinzu, damit es hier erscheint.",
+      "ecom_previewEmptyStoreButton": "Produkte hinzufügen",
+      "ecom_previewOnlyBadge": "Nur Vorschau",
       "ecom_noShippingMethods": "Keine Versandoptionen verfügbar",
       "ecom_notLoggedIn": "Not Logged In",
       "ecom_orderConfirmation": "A confirmation email has been sent to you",
@@ -5460,13 +5486,13 @@ html[dir="rtl"] body {
       "home_p_27": "<b>Die Verschmelzung von Natur und Kunst: Olivenholz und Epoxidharz&nbsp;\nProdukte aus Olivenholz und Epoxidharz repräsentieren eine perfekte Harmonie zwischen alter Tradition und moderner Innovation.&nbsp;\nDurch die Kombination der rohen und organischen Schönheit jahrhundertealter Olivenbäume mit der glatten und vielseitigen Natur hochwertigen Harzes schaffen wir einzigartige handgefertigte Kunstwerke, die sowohl langlebig als auch atemberaubend sind und eine einzigartige Ästhetik besitzen.&nbsp;</b>\n<b>Da keine zwei Olivenholzbretter identisch sind, ist jeder Artikel - von Schneidebrettern bis hin zu Mesusot und Kunstgegenständen -&nbsp;</b>\n<b>ein einzigartiges Meisterwerk.&nbsp;</b>\n<b>Das Harz verschmilzt mit den \"wilden Rändern\"&nbsp;</b>\n<b>(der natürlichen Linie) des Holzes und gewährleistet, dass niemals zwei Teile identisch sein werden.\n</b>",
       "home_p_28": "Mehr erfahren",
       "home_p_29": "Unser Handwerk",
-      "home_p_30": "&nbsp;Jedes Werk, das wir schaffen, beginnt mit Respekt vor ausgewählten natürlichen Materialien,&nbsp;\n\n\ndie gestaltet und hochwertig sind. Dies ist Handwerkskunst in ihrer besten Form.",
+      "home_p_30": "Jedes Kunstwerk, das wir schaffen, beginnt mit Respekt vor ausgewählten natürlichen Materialien,&nbsp;\ndie gestaltet und hochwertig sind. Das ist Handwerkskunst in ihrer besten Form.",
       "home_p_31": "Wir verwenden ausschließlich die edelsten Oliven- und Akazienhölzer — jedes Brett wird aufgrund seiner einzigartigen Struktur, seiner natürlichen Farbvariation und seiner langanhaltenden Beständigkeit ausgewählt. Keine zwei Kunstwerke sind identisch, denn keine zwei Bäume sind gleich.",
       "home_p_32": "Unser spezielles Epoxidharz wird von Hand in die natürlichen Rillen des Holzes eingegossen und schafft leuchtende Farbvenen, die fließendes Wasser widerspiegeln. Jeder Guss wird sorgfältig getimed, geschichtet und ausgehärtet, um eine glatte, glasartige Oberfläche zu erzielen, die lebensmittelsicher und kindersicher ist und generationenlang hält.",
       "home_p_33": "Jede Kante wird von Hand schrittweise geglättet. Jede Oberfläche wird geölt, poliert und geprüft, bevor sie unsere Werkstatt verlässt. Von natürlichen Schneidebrettern bis hin zu handgefertigten Mesusot – die Veredelung ist der Punkt, an dem die Absicht zum Kunstwerk wird.",
       "home_p_34": "Charakteristische Werke",
-      "home_p_35": "Keine zwei Stücke von Natural Wood Art sind gleich. Die Maserbewegung von Oliven- und Akazienholz, der organische Fluss blauer Epoxidharz-Flüsse und die stillen Entscheidungen während der Handveredelung — zusammen machen sie jedes Schneidebrett, jede Mesusa und jeden dekorativen Gegenstand zu einem einzigartigen Artefakt. Das sind keine massenproduzierten Waren; sie sind handgefertigte Geschenke, die vom Material selbst geformt werden.",
-      "home_p_36": "Die Kollektion erkunden",
+      "home_p_35": "Keine zwei Kreationen von Natural Wood Art sind identisch. Die Bewegung der Holzstruktur von Olive und Akazie, der organische Fluss des Epoxidharzes und die handwerkliche Verarbeitung —\n&nbsp;zusammen machen sie jedes Schneidebrett, jede Mesusa und jeden dekorativen Gegenstand zu einem einzigartigen Objekt.&nbsp;\nDies sind keine Massenprodukte;&nbsp;\nsie sind handgefertigte Geschenke, die vom Schöpfer selbst gestaltet werden.",
+      "home_p_36": "Entdecken Sie die Kollektion",
       "home_p_37": "Was unsere Kunden sagen",
       "home_p_38": "\"Ich habe diese Mesusa als Hochzeitsgeschenk gegeben und das Paar war zu Tränen gerührt. Die Art, wie die Olivenholzmaserung in das blaue Harz fließt — es sieht aus wie ein Fluss, der durch alten Stein läuft. Man kann die Seele in jedem Zentimeter spüren. Wirklich ein handgefertigtes Geschenk, das es so online nicht gibt.\"",
       "home_p_39": "\"Das Akazien-Schneidebrett ist ein Werk funktionaler Kunst. Die Handwerkskunst ist außergewöhnlich — jede Kante ist perfekt veredelt, die Epoxid-Einlage ist glatt wie Glas. Ich benutze es täglich und es sieht immer noch aus, als gehöre es in eine Galerie. Jeden Cent wert für handgemachtes Einkaufen.\"",
@@ -5538,9 +5564,9 @@ html[dir="rtl"] body {
       "home_alt_99": "Handgefertigtes Olivenholz-Schneidebrett mit blauem Epoxidharz und skulpturaler Mesusa auf hellem Stein",
       "home_div_82": "Produkte werden geladen...",
       "home_div_83": "Produkte werden geladen...",
-      "home_div_84": "<strong>Fluss-Schneidebretter</strong>\n            <span>Oliven- & Akazienholz mit fließenden Epoxidharz-Kanälen</span>",
-      "home_div_85": "Handgefertigte Mesusen\n            Großformatige Olivenholz-Judaica mit Harzeinlage",
-      "home_div_86": "Dekorative Objekte\n            Servierbretter, Kunstpaneele und maßgeschneiderte Aufträge",
+      "home_div_84": "Schneidebretter&nbsp;\n            Olivenholz und Akazienholz mit fließenden&nbsp; \n\nEpoxidharz-Kanälen&nbsp;",
+      "home_div_85": "Handgefertigte Mesusot\n            Judaika aus Olivenholz in einzigartigem Format mit Einlagerungen aus farbigem Epoxidharz",
+      "home_div_86": "Dekorative Gegenstände\nKunstgegenstände und Sonderanfertigungen",
       "home_div_87": "Rachel M.\n            Hochzeitsgeschenk",
       "home_div_88": "Daniel K.\n            Hausgeschenk",
       "home_div_89": "Miriam S.\n            Judaica-Sammlerin",
@@ -6932,6 +6958,10 @@ html[dir="rtl"] body {
       "ecom_noFeaturedProducts": "No featured products yet. Check out all our products!",
       "ecom_noOrders": "No orders yet",
       "ecom_noProducts": "No products to display",
+      "ecom_previewEmptyStoreTitle": "Votre boutique est prête pour les produits",
+      "ecom_previewEmptyStoreBody": "Ajoutez votre premier produit dans le gestionnaire de boutique pour le voir apparaître ici.",
+      "ecom_previewEmptyStoreButton": "Ajouter des produits",
+      "ecom_previewOnlyBadge": "Aperçu uniquement",
       "ecom_noShippingMethods": "Aucune option de livraison disponible",
       "ecom_notLoggedIn": "Not Logged In",
       "ecom_orderConfirmation": "A confirmation email has been sent to you",
@@ -7060,13 +7090,13 @@ html[dir="rtl"] body {
       "home_p_27": "<b>La fusion de la nature et de l'art : bois d'olivier et résine époxy&nbsp;\nLes produits en bois d'olivier et résine époxy représentent une harmonie parfaite entre tradition ancienne et innovation moderne.&nbsp;\nEn combinant la beauté brute et organique d'oliviers centenaires avec la nature lisse et polyvalente de résine de qualité, nous créons des œuvres d'art artisanales uniques qui sont à la fois durables et époustouflantes avec une esthétique distinctive.&nbsp;</b>\n<b>Puisque deux planches de bois d'olivier ne sont jamais identiques, chaque article - des planches à découper aux mezouzot et pièces d'art -&nbsp;</b>\n<b>est un chef-d'œuvre unique.&nbsp;</b>\n<b>La résine s'intègre avec les \"bords sauvages\"&nbsp;</b>\n<b>(la ligne naturelle) du bois, garantissant que deux pièces ne seront jamais identiques.\n</b>",
       "home_p_28": "En savoir plus",
       "home_p_29": "Notre Artisanat",
-      "home_p_30": "&nbsp;Chaque création que nous réalisons commence par le respect de matériaux naturels&nbsp; sélectionnés,&nbsp;\n\n\ndesignés et de qualité. C'est de l'artisanat à son meilleur.",
+      "home_p_30": "Chaque création que nous réalisons commence par le respect de matériaux naturels sélectionnés,&nbsp;\ndesignés et de qualité. C'est l'artisanat à son meilleur.",
       "home_p_31": "Nous sélectionnons uniquement les bois d'olivier et d'acacia les plus nobles — chaque planche est choisie pour le caractère unique de sa structure, ses variations de couleur naturelle et sa durabilité exceptionnelle. Aucune création n'est identique, car aucun arbre n'est identique.",
       "home_p_32": "Notre résine époxy spéciale est coulée à la main dans les canaux naturels du bois, créant des veines colorées brillantes qui reflètent l'eau qui coule. Chaque coulée est minutieusement chronométrée, stratifiée et durcie pour obtenir une finition lisse comme du verre, sans danger pour les aliments et les enfants, et durable pour des générations.",
       "home_p_33": "Chaque bord est poli à la main de manière progressive. Chaque surface est huilée, polie et vérifiée avant de quitter notre atelier. Des planches à découper naturelles aux mezouzot faites à la main, la finition est l'endroit où l'intention devient création.",
       "home_p_34": "Œuvres Signature",
-      "home_p_35": "Aucune pièce de Natural Wood Art n'est identique. Le mouvement du grain de l'olivier et de l'acacia, le flux organique des rivières de résine époxy bleue, et les décisions silencieuses prises lors de la finition à la main — ensemble, ils font de chaque planche à découper, mezouzah et objet décoratif un artefact singulier. Ce ne sont pas des biens produits en masse ; ce sont des cadeaux faits main façonnés par le matériau lui-même.",
-      "home_p_36": "Explorer la Collection",
+      "home_p_35": "Aucune création de Natural Wood Art n'est identique. Le mouvement de la structure du bois d'olivier et d'acacia, le flux organique de la résine époxy, et la finition artisanale —\n&nbsp;ensemble transforment chaque planche à découper, mezouza et objet décoratif en pièce unique.&nbsp;\nCe ne sont pas des produits fabriqués en masse;&nbsp;\nce sont des cadeaux artisanaux conçus par le créateur lui-même.",
+      "home_p_36": "Explorez la collection",
       "home_p_37": "Ce Que Disent Nos Clients",
       "home_p_38": "\"J'ai offert cette mezouzah comme cadeau de mariage et le couple a été ému aux larmes. La façon dont le grain du bois d'olivier se fond dans la résine bleue — cela ressemble à une rivière qui coule à travers la pierre ancienne. On peut sentir l'âme dans chaque centimètre. Vraiment un cadeau fait main contrairement à tout ce qu'on trouve en ligne.\"",
       "home_p_39": "\"La planche à découper en acacia est une œuvre d'art fonctionnelle. L'artisanat est extraordinaire — chaque bord est parfaitement fini, l'incrustation d'époxy est lisse comme du verre. Je l'utilise quotidiennement et elle ressemble encore à quelque chose qui appartient à une galerie. Vaut chaque centime pour acheter fait main.\"",
@@ -7138,9 +7168,9 @@ html[dir="rtl"] body {
       "home_alt_99": "Planche à découper artisanale en bois d'olivier avec résine époxy bleue et mezouzah sculpturale sur pierre pâle",
       "home_div_82": "Chargement des produits...",
       "home_div_83": "Chargement des produits...",
-      "home_div_84": "<strong>Planches à Découper Rivière</strong>\n            <span>Bois d'olivier & d'acacia avec canaux de résine époxy fluides</span>",
-      "home_div_85": "Mezouzahs Artisanales\n            Judaïca en bois d'olivier grand format avec incrustation de résine",
-      "home_div_86": "Objets Décoratifs\n            Planches de service, panneaux d'art et commandes sur mesure",
+      "home_div_84": "Planches à découper&nbsp;\n            bois d'olivier et d'acacia avec canaux&nbsp; \n\ncoulants de résine époxy&nbsp;",
+      "home_div_85": "Mezouzot faites à la main\n            Judaïca en bois d'olivier dans un format unique avec incrustation de résine époxy colorée",
+      "home_div_86": "Objets décoratifs\nObjets d'art et commandes spéciales",
       "home_div_87": "Rachel M.\n            Cadeau de Mariage",
       "home_div_88": "Daniel K.\n            Cadeau de Maison",
       "home_div_89": "Miriam S.\n            Collectionneuse de Judaïca",
@@ -9492,7 +9522,6 @@ html[dir="rtl"] body {
   }
 })();
 </script>
-  <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
     <script src="/script.js"></script>
 
