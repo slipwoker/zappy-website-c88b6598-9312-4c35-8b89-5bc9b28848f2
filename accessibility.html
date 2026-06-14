@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -1766,6 +1771,7 @@ html[dir="rtl"] body {
 
 
 
+
 <!-- i18next Multi-Language Support -->
 <script>
 (function() {
@@ -2065,7 +2071,7 @@ html[dir="rtl"] body {
       "home_p_27": "<b>The Fusion of Nature and Art: Olive Wood and Epoxy Resin&nbsp;\nOlive wood and epoxy resin products represent perfect harmony between ancient tradition and modern innovation.&nbsp;\nBy combining the raw and organic beauty of centuries-old olive trees with the smooth and versatile nature of quality resin, we create unique handcrafted artworks that are both durable and stunning with distinctive aesthetics.&nbsp;</b>\n<b>Since no two olive wood boards are identical, each item - from cutting boards to mezuzahs and art pieces -&nbsp;</b>\n<b>is a unique masterpiece.&nbsp;</b>\n<b>The resin integrates with the \"wild edges\"&nbsp;</b>\n<b>(the natural line) of the wood, ensuring that no two pieces will ever be identical.\n</b>",
       "home_p_28": "למד עוד",
       "home_p_29": "Our Craft",
-      "home_p_30": "Every creation we make begins with respect for selected natural materials,&nbsp;\ndesigned and high-quality. This is craftsmanship at its finest.",
+      "home_p_30": "Every creation we make begins with respect for selected natural materials,\ndesigned and of high quality.&nbsp;\nThis is craftsmanship at its finest.",
       "home_p_31": "We use only the finest olive and acacia wood — each plank is selected for its unique structural character, natural color variation, and long-term durability. No two creations are identical, because no two trees are the same.",
       "home_p_32": "Our special epoxy resin is hand-poured into the natural wood channels, creating luminous veins of color that reflect flowing water. Each pour is carefully timed, layered and cured to achieve a smooth glass-like finish that is food-safe, child-safe and built to last for generations.",
       "home_p_33": "Every edge is hand-smoothed gradually. Every surface is oiled, polished and inspected before it leaves our workshop. From natural cutting boards to handcrafted mezuzahs, the finish is where intention becomes creation.",
@@ -3669,7 +3675,7 @@ html[dir="rtl"] body {
       "home_p_27": "<b>המיזוג של טבע ואמנות: עץ זית ושרף אפוקסי&nbsp;\nמוצרי עץ זית ושרף אפוקסי מייצגים הרמוניה מושלמת בין מסורת עתיקה לחדשנות מודרנית.&nbsp;\nעל ידי שילוב היופי הגולמי והאורגני של עצי זית בני מאות שנים עם הטבע החלק והרב-תכליתי של שרף איכותי, אנחנו יוצרים יצירות אמנות ייחודיות בעבודת יד שהן עמידות ומדהימות כאחד ובעלות אסתטיקה ייחודית.&nbsp;</b>\n<b>מכיוון ששני לוחות עץ זית אינם זהים, כל פריט - מקרשי חיתוך ועד מזוזות ופרטי האמנות -&nbsp;</b>\n<b>הוא יצירת מופת ייחודית.&nbsp;</b>\n<b>השרף משתלב עם ה \"שוליים הפראיים\"&nbsp;</b>\n<b>(הקו הטבעי) של העץ, ומבטיח ששני חלקים לא יהיו זהים לעולם.\n</b>",
       "home_p_28": "למד עוד",
       "home_p_29": "המלאכה שלנו",
-      "home_p_30": "כל יצירה שאנו יוצרים מתחילה בכבוד לחומרים טבעיים נבחרים,&nbsp;\nמעוצבים ואיכותיים . זוהי מלאכת יד במיטבה.",
+      "home_p_30": "כל יצירה שאנו יוצרים מתחילה בכבוד לחומרים טבעיים נבחרים,\nמעוצבים ואיכותיים .&nbsp;\nזוהי מלאכת יד במיטבה.",
       "home_p_31": "אנו מקפידים רק על עץ זית ושיטה מהמשובחים ביותר — כל קרש נבחר בשל אופי המבנה הייחודי שלו, וריאציית הצבע הטבעי והעמידות הארוכת טווח. אין שתי יצירות זהות, כי אין שני עצים זהים.",
       "home_p_32": "שרף האפוקסי המיוחד שלנו נמזג בעבודת יד לתוך תעלות העץ הטבעיות, ויוצר ורידים זוהרים של צבע המשקפים מים זורמים. כל יציקה מתוזמנת בקפידה, מרובדת ומתקשה כדי להשיג גימור חלק כמו זכוכית, בטוח למזון ולילדים ועמיד לדורות.",
       "home_p_33": "כל קצה מוחלק בעבודת יד באופן הדרגתי. כל משטח משומן, מלוטש ונבדק לפני שהוא עוזב את הסדנה שלנו. מקרשי חיתוך טבעיים ועד מזוזות בעבודת יד, הגימור הוא המקום שבו הכוונה הופכת ליצירה.",
@@ -5273,7 +5279,7 @@ html[dir="rtl"] body {
       "home_p_27": "<b>Die Verschmelzung von Natur und Kunst: Olivenholz und Epoxidharz&nbsp;\nProdukte aus Olivenholz und Epoxidharz repräsentieren eine perfekte Harmonie zwischen alter Tradition und moderner Innovation.&nbsp;\nDurch die Kombination der rohen und organischen Schönheit jahrhundertealter Olivenbäume mit der glatten und vielseitigen Natur hochwertigen Harzes schaffen wir einzigartige handgefertigte Kunstwerke, die sowohl langlebig als auch atemberaubend sind und eine einzigartige Ästhetik besitzen.&nbsp;</b>\n<b>Da keine zwei Olivenholzbretter identisch sind, ist jeder Artikel - von Schneidebrettern bis hin zu Mesusot und Kunstgegenständen -&nbsp;</b>\n<b>ein einzigartiges Meisterwerk.&nbsp;</b>\n<b>Das Harz verschmilzt mit den \"wilden Rändern\"&nbsp;</b>\n<b>(der natürlichen Linie) des Holzes und gewährleistet, dass niemals zwei Teile identisch sein werden.\n</b>",
       "home_p_28": "Mehr erfahren",
       "home_p_29": "Unser Handwerk",
-      "home_p_30": "Jedes Kunstwerk, das wir schaffen, beginnt mit Respekt vor ausgewählten natürlichen Materialien,&nbsp;\ndie gestaltet und hochwertig sind. Das ist Handwerkskunst in ihrer besten Form.",
+      "home_p_30": "Jede Kreation, die wir erschaffen, beginnt mit Respekt vor ausgewählten,\ngestalteten und hochwertigen Naturmaterialien.&nbsp;\nDas ist Handwerkskunst in ihrer besten Form.",
       "home_p_31": "Wir verwenden ausschließlich die edelsten Oliven- und Akazienhölzer — jedes Brett wird aufgrund seiner einzigartigen Struktur, seiner natürlichen Farbvariation und seiner langanhaltenden Beständigkeit ausgewählt. Keine zwei Kunstwerke sind identisch, denn keine zwei Bäume sind gleich.",
       "home_p_32": "Unser spezielles Epoxidharz wird von Hand in die natürlichen Rillen des Holzes eingegossen und schafft leuchtende Farbvenen, die fließendes Wasser widerspiegeln. Jeder Guss wird sorgfältig getimed, geschichtet und ausgehärtet, um eine glatte, glasartige Oberfläche zu erzielen, die lebensmittelsicher und kindersicher ist und generationenlang hält.",
       "home_p_33": "Jede Kante wird von Hand schrittweise geglättet. Jede Oberfläche wird geölt, poliert und geprüft, bevor sie unsere Werkstatt verlässt. Von natürlichen Schneidebrettern bis hin zu handgefertigten Mesusot – die Veredelung ist der Punkt, an dem die Absicht zum Kunstwerk wird.",
@@ -6877,7 +6883,7 @@ html[dir="rtl"] body {
       "home_p_27": "<b>La fusion de la nature et de l'art : bois d'olivier et résine époxy&nbsp;\nLes produits en bois d'olivier et résine époxy représentent une harmonie parfaite entre tradition ancienne et innovation moderne.&nbsp;\nEn combinant la beauté brute et organique d'oliviers centenaires avec la nature lisse et polyvalente de résine de qualité, nous créons des œuvres d'art artisanales uniques qui sont à la fois durables et époustouflantes avec une esthétique distinctive.&nbsp;</b>\n<b>Puisque deux planches de bois d'olivier ne sont jamais identiques, chaque article - des planches à découper aux mezouzot et pièces d'art -&nbsp;</b>\n<b>est un chef-d'œuvre unique.&nbsp;</b>\n<b>La résine s'intègre avec les \"bords sauvages\"&nbsp;</b>\n<b>(la ligne naturelle) du bois, garantissant que deux pièces ne seront jamais identiques.\n</b>",
       "home_p_28": "En savoir plus",
       "home_p_29": "Notre Artisanat",
-      "home_p_30": "Chaque création que nous réalisons commence par le respect de matériaux naturels sélectionnés,&nbsp;\ndesignés et de qualité. C'est l'artisanat à son meilleur.",
+      "home_p_30": "Chaque création que nous réalisons commence par le respect de matériaux naturels sélectionnés,\ndesignés et de qualité.&nbsp;\nC'est de l'artisanat à son meilleur.",
       "home_p_31": "Nous sélectionnons uniquement les bois d'olivier et d'acacia les plus nobles — chaque planche est choisie pour le caractère unique de sa structure, ses variations de couleur naturelle et sa durabilité exceptionnelle. Aucune création n'est identique, car aucun arbre n'est identique.",
       "home_p_32": "Notre résine époxy spéciale est coulée à la main dans les canaux naturels du bois, créant des veines colorées brillantes qui reflètent l'eau qui coule. Chaque coulée est minutieusement chronométrée, stratifiée et durcie pour obtenir une finition lisse comme du verre, sans danger pour les aliments et les enfants, et durable pour des générations.",
       "home_p_33": "Chaque bord est poli à la main de manière progressive. Chaque surface est huilée, polie et vérifiée avant de quitter notre atelier. Des planches à découper naturelles aux mezouzot faites à la main, la finition est l'endroit où l'intention devient création.",
