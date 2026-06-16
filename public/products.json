@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-06-16T06:37:55.165Z",
+  "generated_at": "2026-06-16T10:36:22.632Z",
   "base_url": "https://nwooda.com",
   "currency": "USD",
   "count": 4,
@@ -35,7 +35,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/special-products-6muuvm",
       "categories": [],
-      "updated_at": "2026-05-26T08:05:53.151Z"
+      "updated_at": "2026-06-16T10:33:55.921Z"
     },
     {
       "id": "0a20a953-b6f9-4802-9610-e40508c8bfaa",
@@ -77,7 +77,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/mezuzahs-olive-wood-and-epoxy-w6nea7",
       "categories": [],
-      "updated_at": "2026-06-04T16:40:49.436Z"
+      "updated_at": "2026-06-16T10:33:55.923Z"
     },
     {
       "id": "4b95ce83-f33a-43a3-aa49-c1af09dcfae6",
@@ -114,7 +114,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/olive-wood-cutting-bord-nf3hg3",
       "categories": [],
-      "updated_at": "2026-06-04T16:43:10.656Z"
+      "updated_at": "2026-06-16T10:33:55.922Z"
     },
     {
       "id": "05ae8d26-1904-40c1-aa30-a82e2926a88d",
@@ -153,7 +153,7 @@
       "stock_status": "in_stock",
       "url": "https://nwooda.com/product/indian-rosewood-cutting-bord-nzusha",
       "categories": [],
-      "updated_at": "2026-06-04T16:41:36.013Z"
+      "updated_at": "2026-06-16T10:33:55.920Z"
     }
   ]
 }

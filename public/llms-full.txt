@@ -108,6 +108,7 @@ handmade craft shops — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -627,6 +628,7 @@ Craftsmanship — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -1143,6 +1145,7 @@ Gallery — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -1480,6 +1483,7 @@ Products - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -1688,6 +1692,7 @@ Cart - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -1872,6 +1877,7 @@ Checkout - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -2242,6 +2248,7 @@ Login - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -2433,6 +2440,7 @@ My Account - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -2779,6 +2787,7 @@ Order Received! - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -2987,6 +2996,7 @@ Return Policy - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -3224,6 +3234,7 @@ Product Details - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -3410,6 +3421,7 @@ Products - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -3599,6 +3611,7 @@ Privacy Policy
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -3851,6 +3864,7 @@ Accessibility Statement
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -4109,6 +4123,7 @@ Terms & Conditions
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
@@ -4405,6 +4420,7 @@ Contact — Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+🇷🇺 Русский
 
 
 
