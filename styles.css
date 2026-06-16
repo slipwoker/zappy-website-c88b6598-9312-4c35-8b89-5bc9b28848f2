@@ -7163,6 +7163,10 @@ a, button {
 .product-card .card-cart-btn { flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; border: none; cursor: pointer; background: var(--accent, var(--primary, #ff0083)); color: var(--text-light, #fff); display: inline-flex; align-items: center; justify-content: center; transition: filter 0.18s, transform 0.12s; }
 .product-card .card-cart-btn:hover { filter: brightness(0.92); transform: translateY(-1px); }
 .product-card a.card-cart-btn { text-decoration: none; }
+/* Out of stock: the cart button is visibly disabled (muted, not-allowed) and
+   the title attribute surfaces an "Out of Stock" tooltip on hover. */
+.product-card .card-cart-btn.out-of-stock { background: #d1d5db; color: #fff; cursor: default; opacity: 0.65; }
+.product-card .card-cart-btn.out-of-stock:hover { filter: none; transform: none; }
 @media (max-width: 768px) {
   .product-card .product-card-size-overlay { display: none !important; }
   .product-card .card-quickview-btn { opacity: 1; pointer-events: auto; }
@@ -9523,12 +9527,33 @@ html[lang="ar"] .mobile-search-panel .search-wrapper,
   #navMenu.active {
     background-color: var(--nav-bg, var(--bg-light));
   }
+  /* Kill backdrop-filter on EVERY navbar state at mobile. backdrop-filter
+     (and -webkit- prefix) establishes a CSS containing block, which makes the
+     position:fixed mobile menu resolve top/height relative to the 70px navbar
+     instead of the viewport — collapsing the open menu to a ~40px sliver on
+     scrolled (non-home) pages. */
+  .navbar,
+  nav.navbar,
+  .navbar.scrolled,
+  nav.navbar.scrolled,
+  .navbar.active,
+  .navbar.open,
+  .navbar.menu-open,
+  .zappy-catalog-menu,
+  #zappy-catalog-menu,
+  .zappy-catalog-menu.scrolled,
+  #zappy-catalog-menu.scrolled {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
   .nav-menu.active,
   .nav-menu.nav-menu-active,
   #navMenu.active {
     top: var(--zappy-mobile-menu-top, var(--total-header-height, var(--zappy-navbar-bottom, 70px))) !important;
-    bottom: 0 !important;
-    max-height: calc(100dvh - 70px) !important;
+    /* Explicit height (not a bottom-anchored stretch) so the open menu always
+       fills the viewport below the header even if a stray containing block
+       survives. */
+    height: calc(100dvh - var(--zappy-mobile-menu-top, var(--total-header-height, var(--zappy-navbar-bottom, 70px)))) !important;
     max-height: calc(100dvh - var(--zappy-mobile-menu-top, var(--total-header-height, var(--zappy-navbar-bottom, 70px)))) !important;
     overflow-y: auto !important;
   }
@@ -9707,8 +9732,9 @@ html[lang="ar"] .mobile-search-panel .search-wrapper,
     background: var(--bg-light, #fff) !important;
   }
 
-  /* Icon color: always use text-dark on mobile since circles are always bg-light.
-     --nav-text may be white (for transparent navbars) which is invisible on light circles. */
+  /* Icon color: contrast against the pill surface (luminance-aware).
+     --nav-text may be white (for transparent navbars) which is invisible on light circles;
+     a hardcoded --text-dark is invisible on dark-neutral circles. pillIconColor handles both. */
   .cart-link.nav-cart,
   .login-link.nav-login,
   .nav-search-toggle {
@@ -10536,7 +10562,7 @@ main,
     background: var(--bg-light, #fff) !important;
   }
 
-  /* Icon color: always use text-dark on mobile since circles are always bg-light. */
+  /* Icon color: contrast against the pill surface (luminance-aware). */
   .cart-link.nav-cart,
   .login-link.nav-login,
   .nav-search-toggle {
@@ -11238,6 +11264,13 @@ body[data-zappy-site-type="ecommerce"] {
 
 /* Base page styling - matches hero section theme */
 .ecommerce-page {
+  /* width:100% + box-sizing is REQUIRED: V2 sites set body to display:flex;
+     flex-direction:column (sticky-footer guard). Without an explicit width the
+     margin:0 auto auto cross-axis margins stop this flex item from stretching,
+     so main collapses to its min-content (about one 250px product column) and
+     the products grid renders as a single mobile-like column. */
+  width: 100%;
+  box-sizing: border-box;
   padding: 60px 24px;
   padding-top: 24px;
   max-width: 1440px;

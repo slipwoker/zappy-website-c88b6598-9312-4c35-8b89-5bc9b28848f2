@@ -85,12 +85,13 @@ handmade craft shops — Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -603,12 +604,13 @@ Craftsmanship — Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -1118,12 +1120,13 @@ Gallery — Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -1454,12 +1457,13 @@ Products - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -1476,6 +1480,7 @@ Products - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -1660,12 +1665,13 @@ Cart - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -1682,6 +1688,7 @@ Cart - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -1842,12 +1849,13 @@ Checkout - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -1864,6 +1872,7 @@ Checkout - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -2054,7 +2063,7 @@ Remove
 Subtotal:  $0
 VAT Included:  $0
 Shipping:  $0
-Discount:  $0
+Discount:  $0.00
 
 Total:  $0
 
@@ -2210,12 +2219,13 @@ Login - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -2232,6 +2242,7 @@ Login - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -2399,12 +2410,13 @@ My Account - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -2421,6 +2433,7 @@ My Account - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -2743,12 +2756,13 @@ Order Received! - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -2765,6 +2779,7 @@ Order Received! - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -2949,12 +2964,13 @@ Return Policy - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -2978,6 +2994,7 @@ Return Policy - Natural Wood Art
 
 
 
+
 All Products
 
 
@@ -2992,7 +3009,7 @@ All Products
 # Return Policy
 
 
-Last Updated: 6/13/2026
+Last Updated: 6/16/2026
 
 
 
@@ -3184,12 +3201,13 @@ Product Details - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -3206,6 +3224,7 @@ Product Details - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -3368,12 +3387,13 @@ Products - Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -3390,6 +3410,7 @@ Products - Natural Wood Art
 🇮🇱 עברית
 🇩🇪 Deutsch
 🇫🇷 Français
+
 
 
 
@@ -3555,12 +3576,13 @@ Privacy Policy
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -3806,12 +3828,13 @@ Accessibility Statement
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -4063,12 +4086,13 @@ Terms & Conditions
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
@@ -4358,12 +4382,13 @@ Contact — Natural Wood Art
 
 - Craftsmanship
 
+
+
 - Products Products
 
 
 
 
-- Products
 - New Menu
 - Contact
 0
