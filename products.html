@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html data-zappy-site-type="ecommerce" lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -236,9 +234,7 @@
   
   
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Favicons -->
+  <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
@@ -248,9 +244,9 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <!-- Cookie Consent -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    
     <!-- Mickidum Accessibility Toolbar -->
-    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+    
 
     <!-- Iconify for cross-platform flag icons -->
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script><style id="zappy-multilang-css">
@@ -1534,8 +1530,13 @@ html[dir="rtl"] body {
             })();
           </script>
         
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/styles.css">
+  <style id="zappy-critical-above-fold-css">
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden;min-height:560px}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
+</style>
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+    
 
     <style id="zappy-widget-visibility">
       html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
@@ -1578,8 +1579,7 @@ html[dir="rtl"] body {
     window.ZAPPY_WEBSITE_ID = "c88b6598-9312-4c35-8b89-5bc9b28848f2";
     // Preview pages are served by the Zappy server itself (localhost in dev), so use that base.
     // Deployed sites are static and must call the public Zappy API (never localhost).
-    window.ZAPPY_API_BASE = "https://api.zappy5.com";
-  </script>
+    window.ZAPPY_API_BASE = "https://api.zappy5.com"</script>
   
     <div class="mobile-search-panel" id="mobile-search-panel">
       <div class="search-wrapper">
@@ -1595,10 +1595,10 @@ html[dir="rtl"] body {
     </div>
   <nav class="navbar">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" data-i18n-aria-label="home_aria_label_118">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <svg style="display:block !important" class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none !important">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
@@ -1612,7 +1612,7 @@ html[dir="rtl"] body {
   <div class="nav-container">
     <div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/natural-wood-art-handmade-crafts-woodworking-logo-1775585313368-zg063m.webp?v=1775585314512-kc66dz" alt="Natural Wood Art" class="logo" data-i18n-alt="home_alt_98">
+        <img src="/assets/natural-wood-art-handmade-crafts-woodworking-logo-1775585313368-zg063m.webp?v=1775585314512-kc66dz" alt="Natural Wood Art" class="logo" data-i18n-alt="home_alt_98" decoding="async" width="35" height="35">
       </a>
     </div>
 
@@ -1665,6 +1665,7 @@ html[dir="rtl"] body {
     
         <section class="products-section">
           <h1 id="products-page-title">Our Products</h1>
+<script>/* ZAPPY_PRODUCTS_SEARCH_TITLE_BOOTSTRAP */(function(){try{var params=new URLSearchParams(window.location.search);var direct=(params.get('search')||'').trim();var page=params.get('page')||'';var nested='';if(page){try{nested=(new URL(page,window.location.origin).searchParams.get('search')||'').trim();}catch(e){}}if(!direct&&!nested)return;var title=document.getElementById('products-page-title');if(!title)return;var lang=((document.documentElement&&document.documentElement.getAttribute('lang'))||'').toLowerCase();var label=lang.indexOf('he')===0?'תוצאות חיפוש':'Search results';if((title.textContent||'').trim()!==label)title.textContent=label;title.setAttribute('data-search-title-active','true');}catch(e){}})();</script>
           <div class="products-toolbar" id="products-toolbar" style="display:none;">
             <button class="sidebar-toggle-btn" id="sidebar-toggle-btn" style="display:none;" aria-label="Filters">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h4"></path></svg>
@@ -1699,7 +1700,7 @@ html[dir="rtl"] body {
         </section>
       
   </main>
-  <footer class="site-footer"><div class="footer-container"><div class="footer-top"><div class="footer-col footer-brand"><input type="checkbox" id="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true"><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1774790825638-m4cfqy4vl" data-element-type="image" data-zappy-zoom-wrapper-width="202px" data-zappy-zoom-wrapper-height="201px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="cursor: pointer; position: relative !important; overflow: hidden !important; width: 202px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: auto !important; height: 201px !important; display: block !important;" data-zappy-click-action="expand"><img src="/assets/natural-wood-art-handmade-crafts-woodworking-service-1775560440674-zu2fg6.webp?v=1775560443010" alt="Natural Wood Art" class="logo" data-element-type="image" data-element-id="img-1774790825638-m4cfqy4vl" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; width: 100% !important; max-width: none !important; max-height: none !important; height: 100.299% !important; margin: 0px !important; left: 0% !important; top: -0.149254% !important; position: absolute !important;" data-zappy-zoom="0.8" data-zappy-original-width="202" data-zappy-original-height="201" data-zappy-object-position="50% 50%" data-zappy-click-action="expand" data-zappy-footer-image="true" data-i18n-alt="home_alt_112"></div></label><p class="footer-tagline" data-i18n="home_p_44">Handcrafted with intention. Built to last generations.</p><p class="footer-desc" data-i18n="home_p_45">Every piece we create carries the warmth of natural wood and the soul of the maker's hand — designed for homes that value beauty, meaning, and craft.</p></div><div class="footer-col footer-links"><h4 class="footer-heading" data-i18n="home_h4_17"><span class="heading-accent"></span>Explore</h4><ul class="footer-nav"><li><a href="/craftsmanship" data-i18n="home_link_69"><i class="fas fa-chevron-right footer-link-icon"></i>Craftsmanship</a></li><li><a href="/gallery" data-i18n="home_link_70"><i class="fas fa-chevron-right footer-link-icon"></i>Gallery</a></li><li><a href="/contact" data-i18n="home_link_71"><i class="fas fa-chevron-right footer-link-icon"></i>Contact</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading" data-i18n="home_h4_18"><span class="heading-accent"></span>Get in Touch</h4><ul class="footer-contact-list" ><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1774790825637-gvs198v4j" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="mailto:support@nwooda.com" data-i18n="home_link_72">support@nwooda.com</a></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1774790825637-dpowfiikt" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="tel:+972505588259">+972505588259</a></li><li><a href="/" data-i18n="home_link_73"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span><address>&nbsp; &nbsp;4522570, ISRAEL</address></a></li></ul></div><div class="footer-col footer-social-col"><h4 class="footer-heading" data-i18n="home_h4_19"><span class="heading-accent"></span>Follow Along</h4><p class="footer-social-desc" data-i18n="home_p_46">Join our community of craft lovers and see our latest work.</p><div class="footer-social-links"><a href="https://facebook.com/share/1cDimQEnKZ" aria-label="Facebook" data-i18n-aria-label="home_aria_label_120"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="home_aria_label_121"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1774790825637-flwjn36v9" data-icon-type="fontawesome"></i></a><a href="https://wa.me/972505588259" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_122"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1774790825637-hthurw0im" data-icon-type="fontawesome"></i></a></div></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copyright" data-i18n="home_p_47">© 2026 Natural Wood Art. All rights reserved.</p><div class="footer-legal"><a href="/privacy" data-i18n="home_link_74">Privacy Policy</a><span class="legal-sep">·</span><a href="/terms" data-i18n="home_link_75">Terms &amp; Conditions</a><span class="separator">|</span>
+  <footer class="site-footer"><div class="footer-container"><div class="footer-top"><div class="footer-col footer-brand"><input type="checkbox" id="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true"><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1774790825638-m4cfqy4vl" data-element-type="image" data-zappy-zoom-wrapper-width="202px" data-zappy-zoom-wrapper-height="201px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="cursor: pointer; position: relative !important; overflow: hidden !important; width: 202px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: auto !important; height: 201px !important; display: block !important;" data-zappy-click-action="expand"><img src="/assets/natural-wood-art-handmade-crafts-woodworking-service-1775560440674-zu2fg6.webp?v=1775560443010" alt="Natural Wood Art" class="logo" data-element-type="image" data-element-id="img-1774790825638-m4cfqy4vl" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; width: 100% !important; max-width: none !important; max-height: none !important; height: 100.299% !important; margin: 0px !important; left: 0% !important; top: -0.149254% !important; position: absolute !important;" data-zappy-zoom="0.8" data-zappy-original-width="202" data-zappy-original-height="201" data-zappy-object-position="50% 50%" data-zappy-click-action="expand" data-zappy-footer-image="true" data-i18n-alt="home_alt_112" decoding="async" width="35" height="35"></div></label><p class="footer-tagline" data-i18n="home_p_44">Handcrafted with intention. Built to last generations.</p><p class="footer-desc" data-i18n="home_p_45">Every piece we create carries the warmth of natural wood and the soul of the maker's hand — designed for homes that value beauty, meaning, and craft.</p></div><div class="footer-col footer-links"><h4 class="footer-heading" data-i18n="home_h4_17"><span class="heading-accent"></span>Explore</h4><ul class="footer-nav"><li><a href="/craftsmanship" data-i18n="home_link_69"><i class="fas fa-chevron-right footer-link-icon"></i>Craftsmanship</a></li><li><a href="/gallery" data-i18n="home_link_70"><i class="fas fa-chevron-right footer-link-icon"></i>Gallery</a></li><li><a href="/contact" data-i18n="home_link_71"><i class="fas fa-chevron-right footer-link-icon"></i>Contact</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading" data-i18n="home_h4_18"><span class="heading-accent"></span>Get in Touch</h4><ul class="footer-contact-list"><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1774790825637-gvs198v4j" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="mailto:support@nwooda.com" data-i18n="home_link_72">support@nwooda.com</a></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1774790825637-dpowfiikt" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="tel:+972505588259">+972505588259</a></li><li><a href="/" data-i18n="home_link_73"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span><address>&nbsp; &nbsp;4522570, ISRAEL</address></a></li></ul></div><div class="footer-col footer-social-col"><h4 class="footer-heading" data-i18n="home_h4_19"><span class="heading-accent"></span>Follow Along</h4><p class="footer-social-desc" data-i18n="home_p_46">Join our community of craft lovers and see our latest work.</p><div class="footer-social-links"><a href="https://facebook.com/share/1cDimQEnKZ" aria-label="Facebook" data-i18n-aria-label="home_aria_label_120"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="home_aria_label_121"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1774790825637-flwjn36v9" data-icon-type="fontawesome"></i></a><a href="https://wa.me/972505588259" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_122"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1774790825637-hthurw0im" data-icon-type="fontawesome"></i></a></div></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copyright" data-i18n="home_p_47">© 2026 Natural Wood Art. All rights reserved.</p><div class="footer-legal"><a href="/privacy" data-i18n="home_link_74">Privacy Policy</a><span class="legal-sep">·</span><a href="/terms" data-i18n="home_link_75">Terms &amp; Conditions</a><span class="separator">|</span>
             <a href="/return-policy" aria-label="Return Policy" data-i18n="home_link_76" data-i18n-aria-label="home_aria_label_123">
               Return Policy
             </a><span class="legal-sep">·</span><a href="/accessibility" data-i18n="home_link_77">Accessibility</a><span class="legal-sep">·</span><a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="home_link_78">Generated by Zappy</a></div></div></div></footer>
@@ -1828,6 +1829,7 @@ html[dir="rtl"] body {
   </script>
   <a href="https://wa.me/+972505588259" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></a>
 
+
 <!-- i18next Multi-Language Support -->
 <script>
 (function() {
@@ -1855,8 +1857,24 @@ html[dir="rtl"] body {
       "ecom_apartmentExt": "Apt, Floor, Building Code, Notes, Etc.",
       "ecom_applyCoupon": "Apply",
       "ecom_backToProducts": "Back to Products",
+      "ecom_bookNow": "Book now",
+      "ecom_bookingChooseDate": "Choose a date",
+      "ecom_bookingChooseTime": "Choose a time",
+      "ecom_bookingDate": "Date",
+      "ecom_bookingLoading": "Loading availability…",
+      "ecom_bookingNoDates": "No available dates right now",
+      "ecom_bookingNoSlots": "No available times right now",
+      "ecom_bookingRemaining": "{count} left",
+      "ecom_bookingSelectOption": "Select",
+      "ecom_bookingSelectTime": "Select a time",
+      "ecom_bookingSelectDateFirst": "Please choose a date first",
+      "ecom_bookingSelectTimeFirst": "Please choose a date and time first",
+      "ecom_bookingCompleteFormFirst": "Please fill in the required booking fields",
+      "ecom_bookingTime": "Time",
       "ecom_browseFavorites": "Discover all our products",
       "ecom_bundleDiscount": "Bundle Discount",
+      "ecom_seasonalDiscount": "Seasonal Discount",
+      "ecom_customerDiscount": "Customer Discount",
       "ecom_bundleTotal": "Bundle total",
       "ecom_callNow": "Call Now",
       "ecom_cancel": "Cancel",
@@ -1967,6 +1985,8 @@ html[dir="rtl"] body {
       "ecom_haveCouponCode": "I have a coupon code",
       "ecom_home": "Home",
       "ecom_inStock": "In Stock",
+      "ecom_onlyOneLeft": "Only 1 left in stock",
+      "ecom_onlyXLeft": "Only {count} left in stock",
       "ecom_inquiryAbout": "Inquiry about",
       "ecom_invalidCoupon": "Invalid coupon code",
       "ecom_items": "Items",
@@ -2044,6 +2064,7 @@ html[dir="rtl"] body {
       "ecom_saveToFavorites": "Save to Favorites",
       "ecom_saving": "Saving...",
       "ecom_searchProducts": "Search products",
+      "ecom_searchResults": "Search results",
       "ecom_selectVariant": "Select option",
       "ecom_sendCode": "Send Code",
       "ecom_sendInquiry": "Send Inquiry",
@@ -2097,6 +2118,8 @@ html[dir="rtl"] body {
       "ecom_coursesEnrollmentCheckFailed": "Could not verify course ownership. Please try again.",
       "ecom_coursesAlreadyEnrolledPrompt": "Already enrolled?",
       "ecom_coursesLoginLink": "Log in",
+      "ecom_yourCourse": "your course",
+      "ecom_courseAccessMethod": "Online course access",
       "ecom_processing": "Processing...",
       "ecom_checkoutFailed": "Checkout failed. Please try again.",
       "cart_p_6": "Handcrafted with intention. Built to last generations.",
@@ -2108,7 +2131,7 @@ html[dir="rtl"] body {
       "cart_h4_3": "Explore",
       "cart_h4_4": "Get in Touch",
       "cart_h4_5": "Follow Along",
-      "home_h2_1": "<font color=\"#ffffff\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Trees from the Land of Israel&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Olive and Acacia Trees&nbsp;</font>",
+      "home_h2_1": "<font color=\"#ffffff\">Trees from the holy Land&nbsp;\n&nbsp;Olive and Acacia Trees&nbsp;</font>",
       "home_h2_2": "Natural Wood Art",
       "home_h2_3": "Featured Products",
       "home_h2_4": "Shop by Category",
@@ -3459,8 +3482,24 @@ html[dir="rtl"] body {
       "ecom_apartmentExt": "דירה, קומה, קוד בניין, הערות וכו'",
       "ecom_applyCoupon": "החל",
       "ecom_backToProducts": "חזרה למוצרים",
+      "ecom_bookNow": "הזמינו עכשיו",
+      "ecom_bookingChooseDate": "בחרו תאריך",
+      "ecom_bookingChooseTime": "בחרו שעה",
+      "ecom_bookingDate": "תאריך",
+      "ecom_bookingLoading": "טוען זמינות…",
+      "ecom_bookingNoDates": "אין תאריכים פנויים כרגע",
+      "ecom_bookingNoSlots": "אין זמנים פנויים כרגע",
+      "ecom_bookingRemaining": "נותרו {count}",
+      "ecom_bookingSelectOption": "בחירה",
+      "ecom_bookingSelectTime": "בחרו שעה",
+      "ecom_bookingSelectDateFirst": "אנא בחרו תאריך תחילה",
+      "ecom_bookingSelectTimeFirst": "אנא בחרו תאריך ושעה תחילה",
+      "ecom_bookingCompleteFormFirst": "אנא מלאו את שדות ההזמנה הנדרשים",
+      "ecom_bookingTime": "שעה",
       "ecom_browseFavorites": "גלו את כל המוצרים שלנו",
       "ecom_bundleDiscount": "הנחת חבילה",
+      "ecom_seasonalDiscount": "הנחה עונתית",
+      "ecom_customerDiscount": "הנחת לקוח",
       "ecom_bundleTotal": "סה\"כ לעגלה",
       "ecom_callNow": "התקשר עכשיו",
       "ecom_cancel": "ביטול",
@@ -3571,6 +3610,8 @@ html[dir="rtl"] body {
       "ecom_haveCouponCode": "יש לי קוד קופון",
       "ecom_home": "דף הבית",
       "ecom_inStock": "במלאי",
+      "ecom_onlyOneLeft": "נותר פריט אחד בלבד",
+      "ecom_onlyXLeft": "נותרו רק {count} במלאי",
       "ecom_inquiryAbout": "פנייה בנושא",
       "ecom_invalidCoupon": "קוד קופון לא תקין",
       "ecom_items": "פריטים",
@@ -3648,6 +3689,7 @@ html[dir="rtl"] body {
       "ecom_saveToFavorites": "שמור למועדפים",
       "ecom_saving": "שומר...",
       "ecom_searchProducts": "חיפוש מוצרים",
+      "ecom_searchResults": "תוצאות חיפוש",
       "ecom_selectVariant": "בחר אפשרות",
       "ecom_sendCode": "שלח קוד",
       "ecom_sendInquiry": "שלח פנייה",
@@ -3701,6 +3743,8 @@ html[dir="rtl"] body {
       "ecom_coursesEnrollmentCheckFailed": "לא ניתן לאמת בעלות על הקורס. אנא נסה שוב.",
       "ecom_coursesAlreadyEnrolledPrompt": "כבר נרשמת?",
       "ecom_coursesLoginLink": "לכניסה",
+      "ecom_yourCourse": "הקורס שלך",
+      "ecom_courseAccessMethod": "גישה דיגיטלית מקוונת",
       "ecom_processing": "מעבד...",
       "ecom_checkoutFailed": "שגיאה בתהליך התשלום. נסו שוב.",
       "cart_p_6": "מעוצב ביד בכוונה. נבנה להחזיק דורות.",
@@ -3712,7 +3756,7 @@ html[dir="rtl"] body {
       "cart_h4_3": "גלה",
       "cart_h4_4": "צור קשר",
       "cart_h4_5": "עקוב אחרינו",
-      "home_h2_1": "<font color=\"#ffffff\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;עצים מארץ ישראל&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; עצי זית ושיטה&nbsp;</font>",
+      "home_h2_1": "<font color=\"#ffffff\">עצים מהארץ הקדושה&nbsp;\n&nbsp;עצי זית ושיטה&nbsp;</font>",
       "home_h2_2": "אמנות בעץ טבעי",
       "home_h2_3": "מוצרים מובחרים",
       "home_h2_4": "קנייה לפי קטגוריה",
@@ -5063,8 +5107,24 @@ html[dir="rtl"] body {
       "ecom_apartmentExt": "Wohnung, Etage, Gebäudecode, Hinweise usw.",
       "ecom_applyCoupon": "Apply",
       "ecom_backToProducts": "Back to Products",
+      "ecom_bookNow": "Jetzt buchen",
+      "ecom_bookingChooseDate": "Datum wählen",
+      "ecom_bookingChooseTime": "Uhrzeit wählen",
+      "ecom_bookingDate": "Datum",
+      "ecom_bookingLoading": "Verfügbarkeit wird geladen…",
+      "ecom_bookingNoDates": "Derzeit keine verfügbaren Daten",
+      "ecom_bookingNoSlots": "Derzeit keine verfügbaren Zeiten",
+      "ecom_bookingRemaining": "Noch {count}",
+      "ecom_bookingSelectOption": "Auswählen",
+      "ecom_bookingSelectTime": "Uhrzeit auswählen",
+      "ecom_bookingSelectDateFirst": "Bitte zuerst ein Datum wählen",
+      "ecom_bookingSelectTimeFirst": "Bitte zuerst Datum und Uhrzeit wählen",
+      "ecom_bookingCompleteFormFirst": "Bitte füllen Sie die erforderlichen Buchungsfelder aus",
+      "ecom_bookingTime": "Uhrzeit",
       "ecom_browseFavorites": "Discover all our products",
       "ecom_bundleDiscount": "Paketrabatt",
+      "ecom_seasonalDiscount": "Saisonaler Rabatt",
+      "ecom_customerDiscount": "Kundenrabatt",
       "ecom_bundleTotal": "Bundle-Gesamtsumme",
       "ecom_callNow": "Call Now",
       "ecom_cancel": "Cancel",
@@ -5175,6 +5235,8 @@ html[dir="rtl"] body {
       "ecom_haveCouponCode": "I have a coupon code",
       "ecom_home": "Startseite",
       "ecom_inStock": "Auf Lager",
+      "ecom_onlyOneLeft": "Nur noch 1 auf Lager",
+      "ecom_onlyXLeft": "Nur noch {count} auf Lager",
       "ecom_inquiryAbout": "Inquiry about",
       "ecom_invalidCoupon": "Invalid coupon code",
       "ecom_items": "Items",
@@ -5252,6 +5314,7 @@ html[dir="rtl"] body {
       "ecom_saveToFavorites": "Save to Favorites",
       "ecom_saving": "Saving...",
       "ecom_searchProducts": "Search products",
+      "ecom_searchResults": "Suchergebnisse",
       "ecom_selectVariant": "Select option",
       "ecom_sendCode": "Send Code",
       "ecom_sendInquiry": "Send Inquiry",
@@ -5305,6 +5368,8 @@ html[dir="rtl"] body {
       "ecom_coursesEnrollmentCheckFailed": "Kursberechtigung konnte nicht überprüft werden. Bitte versuchen Sie es erneut.",
       "ecom_coursesAlreadyEnrolledPrompt": "Bereits eingeschrieben?",
       "ecom_coursesLoginLink": "Anmelden",
+      "ecom_yourCourse": "dein Kurs",
+      "ecom_courseAccessMethod": "Online-Kurszugang",
       "ecom_processing": "Wird verarbeitet...",
       "ecom_checkoutFailed": "Bezahlung fehlgeschlagen. Bitte versuchen Sie es erneut.",
       "cart_p_6": "Mit Intention handgefertigt. Gebaut für Generationen.",
@@ -5316,7 +5381,7 @@ html[dir="rtl"] body {
       "cart_h4_3": "Entdecken",
       "cart_h4_4": "Kontakt aufnehmen",
       "cart_h4_5": "Folgen Sie uns",
-      "home_h2_1": "<font color=\"#ffffff\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bäume aus dem Land Israel&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oliven- und Akazienbäume&nbsp;</font>",
+      "home_h2_1": "<font color=\"#ffffff\">Bäume aus dem Heiligen Land&nbsp;\n&nbsp;Olivenbäume und Akazienbäume&nbsp;</font>",
       "home_h2_2": "Kunst aus Naturholz",
       "home_h2_3": "Ausgewählte Produkte",
       "home_h2_4": "Nach Kategorie einkaufen",
@@ -6667,8 +6732,24 @@ html[dir="rtl"] body {
       "ecom_apartmentExt": "Apt., étage, code bâtiment, notes, etc.",
       "ecom_applyCoupon": "Apply",
       "ecom_backToProducts": "Back to Products",
+      "ecom_bookNow": "Réserver",
+      "ecom_bookingChooseDate": "Choisir une date",
+      "ecom_bookingChooseTime": "Choisir un horaire",
+      "ecom_bookingDate": "Date",
+      "ecom_bookingLoading": "Chargement des disponibilités…",
+      "ecom_bookingNoDates": "Aucune date disponible pour le moment",
+      "ecom_bookingNoSlots": "Aucun horaire disponible pour le moment",
+      "ecom_bookingRemaining": "Il reste {count}",
+      "ecom_bookingSelectOption": "Sélectionner",
+      "ecom_bookingSelectTime": "Sélectionnez un horaire",
+      "ecom_bookingSelectDateFirst": "Veuillez d'abord choisir une date",
+      "ecom_bookingSelectTimeFirst": "Veuillez d'abord choisir une date et une heure",
+      "ecom_bookingCompleteFormFirst": "Veuillez renseigner les champs de réservation obligatoires",
+      "ecom_bookingTime": "Heure",
       "ecom_browseFavorites": "Discover all our products",
       "ecom_bundleDiscount": "Remise lot",
+      "ecom_seasonalDiscount": "Remise saisonnière",
+      "ecom_customerDiscount": "Remise client",
       "ecom_bundleTotal": "Total du lot",
       "ecom_callNow": "Call Now",
       "ecom_cancel": "Cancel",
@@ -6779,6 +6860,8 @@ html[dir="rtl"] body {
       "ecom_haveCouponCode": "I have a coupon code",
       "ecom_home": "Accueil",
       "ecom_inStock": "En stock",
+      "ecom_onlyOneLeft": "Plus qu'1 en stock",
+      "ecom_onlyXLeft": "Plus que {count} en stock",
       "ecom_inquiryAbout": "Inquiry about",
       "ecom_invalidCoupon": "Invalid coupon code",
       "ecom_items": "Items",
@@ -6856,6 +6939,7 @@ html[dir="rtl"] body {
       "ecom_saveToFavorites": "Save to Favorites",
       "ecom_saving": "Saving...",
       "ecom_searchProducts": "Search products",
+      "ecom_searchResults": "Résultats de recherche",
       "ecom_selectVariant": "Select option",
       "ecom_sendCode": "Send Code",
       "ecom_sendInquiry": "Send Inquiry",
@@ -6909,6 +6993,8 @@ html[dir="rtl"] body {
       "ecom_coursesEnrollmentCheckFailed": "Impossible de vérifier la propriété du cours. Veuillez réessayer.",
       "ecom_coursesAlreadyEnrolledPrompt": "Déjà inscrit ?",
       "ecom_coursesLoginLink": "Se connecter",
+      "ecom_yourCourse": "votre cours",
+      "ecom_courseAccessMethod": "Accès en ligne au cours",
       "ecom_processing": "Traitement en cours...",
       "ecom_checkoutFailed": "Le paiement a échoué. Veuillez réessayer.",
       "cart_p_6": "Fabriqué à la main avec intention. Conçu pour durer des générations.",
@@ -6920,7 +7006,7 @@ html[dir="rtl"] body {
       "cart_h4_3": "Explorer",
       "cart_h4_4": "Nous Contacter",
       "cart_h4_5": "Suivez-nous",
-      "home_h2_1": "<font color=\"#ffffff\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bois de la Terre d'Israël&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oliviers et acacias&nbsp;</font>",
+      "home_h2_1": "<font color=\"#ffffff\">Arbres de la Terre Sainte&nbsp;\n&nbsp;Oliviers et Acacias&nbsp;</font>",
       "home_h2_2": "Art en bois naturel",
       "home_h2_3": "Produits Vedettes",
       "home_h2_4": "Acheter par Catégorie",
@@ -8271,8 +8357,24 @@ html[dir="rtl"] body {
       "ecom_apartmentExt": "Кв., этаж, код дома, заметки и т.д.",
       "ecom_applyCoupon": "Apply",
       "ecom_backToProducts": "Back to Products",
+      "ecom_bookNow": "Забронировать",
+      "ecom_bookingChooseDate": "Выберите дату",
+      "ecom_bookingChooseTime": "Выберите время",
+      "ecom_bookingDate": "Дата",
+      "ecom_bookingLoading": "Загрузка доступности…",
+      "ecom_bookingNoDates": "Сейчас нет доступных дат",
+      "ecom_bookingNoSlots": "Сейчас нет свободного времени",
+      "ecom_bookingRemaining": "Осталось {count}",
+      "ecom_bookingSelectOption": "Выбрать",
+      "ecom_bookingSelectTime": "Выберите время",
+      "ecom_bookingSelectDateFirst": "Сначала выберите дату",
+      "ecom_bookingSelectTimeFirst": "Сначала выберите дату и время",
+      "ecom_bookingCompleteFormFirst": "Пожалуйста, заполните обязательные поля бронирования",
+      "ecom_bookingTime": "Время",
       "ecom_browseFavorites": "Discover all our products",
       "ecom_bundleDiscount": "Скидка за набор",
+      "ecom_seasonalDiscount": "Сезонная скидка",
+      "ecom_customerDiscount": "Скидка клиента",
       "ecom_bundleTotal": "Итого набор",
       "ecom_callNow": "Call Now",
       "ecom_cancel": "Cancel",
@@ -8383,6 +8485,8 @@ html[dir="rtl"] body {
       "ecom_haveCouponCode": "I have a coupon code",
       "ecom_home": "Главная",
       "ecom_inStock": "В наличии",
+      "ecom_onlyOneLeft": "Остался только 1",
+      "ecom_onlyXLeft": "Осталось только {count}",
       "ecom_inquiryAbout": "Inquiry about",
       "ecom_invalidCoupon": "Invalid coupon code",
       "ecom_items": "Items",
@@ -8460,6 +8564,7 @@ html[dir="rtl"] body {
       "ecom_saveToFavorites": "Save to Favorites",
       "ecom_saving": "Saving...",
       "ecom_searchProducts": "Search products",
+      "ecom_searchResults": "Результаты поиска",
       "ecom_selectVariant": "Select option",
       "ecom_sendCode": "Send Code",
       "ecom_sendInquiry": "Send Inquiry",
@@ -8513,6 +8618,8 @@ html[dir="rtl"] body {
       "ecom_coursesEnrollmentCheckFailed": "Не удалось подтвердить владение курсом. Пожалуйста, попробуйте снова.",
       "ecom_coursesAlreadyEnrolledPrompt": "Уже записаны?",
       "ecom_coursesLoginLink": "Войти",
+      "ecom_yourCourse": "ваш курс",
+      "ecom_courseAccessMethod": "Онлайн-доступ к курсу",
       "ecom_processing": "Обработка...",
       "ecom_checkoutFailed": "Ошибка оплаты. Пожалуйста, попробуйте снова.",
       "cart_p_6": "Handcrafted with intention. Built to last generations.",
@@ -8524,7 +8631,7 @@ html[dir="rtl"] body {
       "cart_h4_3": "Explore",
       "cart_h4_4": "Get in Touch",
       "cart_h4_5": "Follow Along",
-      "home_h2_1": "<font color=\"#ffffff\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Trees from the Land of Israel&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Olive and Acacia Trees&nbsp;</font>",
+      "home_h2_1": "<font color=\"#ffffff\">Деревья со Святой Земли&nbsp;\n&nbsp;Оливковые и акациевые деревья&nbsp;</font>",
       "home_h2_2": "Natural Wood Art",
       "home_h2_3": "Featured Products",
       "home_h2_4": "Shop by Category",
@@ -10826,77 +10933,38 @@ html[dir="rtl"] body {
   
   // ============================================
   // LANGUAGE SWITCHER ICON COLOR DETECTION
-  // Dynamically detect if navbar has light/dark background
-  // and set the globe icon color accordingly
+  // (shared source — see getFixLanguageSwitcherColorSource)
   // ============================================
   function fixLanguageSwitcherColor() {
+    /* ZAPPY_LANG_SWITCHER_COLOR_FIX_V3 */
     var switcher = document.querySelector('.lang-switcher-current');
     var svg = switcher ? switcher.querySelector('svg') : null;
     if (!switcher || !svg) return;
-    
-    // Find the navbar or header element
-    var navbar = document.querySelector('.navbar') || 
-                 document.querySelector('nav') || 
+
+    var navbar = document.querySelector('.navbar') ||
+                 document.querySelector('nav') ||
                  document.querySelector('header');
     if (!navbar) return;
-    
-    // Get the effective background color by walking up the DOM tree
-    function getEffectiveBackgroundColor(element) {
-      var el = element;
-      var maxDepth = 10; // Prevent infinite loops
-      
-      while (el && maxDepth > 0) {
-        var style = window.getComputedStyle(el);
-        var bg = style.backgroundColor;
-        
-        // Skip transparent backgrounds
-        if (bg && bg !== 'transparent' && bg !== 'rgba(0, 0, 0, 0)') {
-          return bg;
-        }
-        
-        // Check background-image for gradients
-        var bgImage = style.backgroundImage;
-        if (bgImage && bgImage !== 'none') {
-          // Extract first color from gradient
-          var gradientMatch = bgImage.match(/rgba?\([^)]+\)|#[a-fA-F0-9]{3,8}/);
-          if (gradientMatch) {
-            return gradientMatch[0];
-          }
-        }
-        
-        el = el.parentElement;
-        maxDepth--;
-      }
-      
-      // Default to white if no background found (assume light)
-      return 'rgb(255, 255, 255)';
+
+    function applyColor(color) {
+      if (!color) return;
+      // Keep SVG on currentColor so frosted-scroll CSS / setScrolledColors can
+      // retint the globe by setting only the button's color.
+      try { svg.style.fill = 'currentColor'; } catch (e1) {}
+      try { svg.setAttribute('fill', 'currentColor'); } catch (e2) {}
+      switcher.style.color = color;
     }
-    
-    // Parse color string to RGB values
+
     function parseColor(colorStr) {
       if (!colorStr) return null;
-      
-      // Handle rgb/rgba
       var rgbMatch = colorStr.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);
       if (rgbMatch) {
-        return {
-          r: parseInt(rgbMatch[1], 10),
-          g: parseInt(rgbMatch[2], 10),
-          b: parseInt(rgbMatch[3], 10)
-        };
+        return { r: parseInt(rgbMatch[1], 10), g: parseInt(rgbMatch[2], 10), b: parseInt(rgbMatch[3], 10) };
       }
-      
-      // Handle hex
       var hexMatch = colorStr.match(/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/);
       if (hexMatch) {
-        return {
-          r: parseInt(hexMatch[1], 16),
-          g: parseInt(hexMatch[2], 16),
-          b: parseInt(hexMatch[3], 16)
-        };
+        return { r: parseInt(hexMatch[1], 16), g: parseInt(hexMatch[2], 16), b: parseInt(hexMatch[3], 16) };
       }
-      
-      // Handle 3-digit hex
       var hex3Match = colorStr.match(/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])$/);
       if (hex3Match) {
         return {
@@ -10905,46 +10973,143 @@ html[dir="rtl"] body {
           b: parseInt(hex3Match[3] + hex3Match[3], 16)
         };
       }
-      
       return null;
     }
-    
-    // Calculate relative luminance (WCAG formula)
+
     function getLuminance(rgb) {
-      if (!rgb) return 0.5; // Default to middle
-      
-      var r = rgb.r / 255;
-      var g = rgb.g / 255;
-      var b = rgb.b / 255;
-      
-      // Apply gamma correction
+      if (!rgb) return 0.5;
+      var r = rgb.r / 255, g = rgb.g / 255, b = rgb.b / 255;
       r = r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4);
       g = g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4);
       b = b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4);
-      
       return 0.2126 * r + 0.7152 * g + 0.0722 * b;
     }
-    
-    // Get the effective background color
-    var bgColor = getEffectiveBackgroundColor(navbar);
-    var rgb = parseColor(bgColor);
-    var luminance = getLuminance(rgb);
-    
-    // Threshold: 0.5 is middle, lower = darker background
-    // Use 0.4 as threshold for better contrast
-    var isLightBackground = luminance > 0.4;
-    
-    // Set icon color based on background
-    // Light background = dark icon (#1a1a1a)
-    // Dark background = light icon (#F3FAFF)
-    var iconColor = isLightBackground ? '#1a1a1a' : '#F3FAFF';
-    
-    svg.style.fill = iconColor;
-    switcher.style.color = iconColor;
-    
-    console.log('[i18n] Language switcher icon color:', iconColor, 
-                '(bg luminance:', luminance.toFixed(2), 
-                ', isLight:', isLightBackground, ')');
+
+    function isOpaqueBg(bg) {
+      if (!bg || bg === 'transparent' || bg === 'rgba(0, 0, 0, 0)') return false;
+      var am = bg.match(/rgba\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*([\d.]+)/);
+      if (am && parseFloat(am[1]) < 0.6) return false;
+      return true;
+    }
+
+    function pickFromLuminance(rgb) {
+      return getLuminance(rgb) > 0.4 ? '#1a1a1a' : '#F3FAFF';
+    }
+
+    var isScrolled = navbar.classList.contains('scrolled');
+    var frostedText = '';
+    try { frostedText = (navbar.style.getPropertyValue('--frosted-text') || window.getComputedStyle(navbar).getPropertyValue('--frosted-text') || '').trim(); } catch (e3) {}
+
+    // 0) Frosted / scrolled transparent navbar — light glass needs a DARK globe.
+    //    Must win over --nav-text (which stays light for the at-top hero overlay).
+    if (isScrolled || frostedText) {
+      if (frostedText) {
+        applyColor(frostedText);
+        return;
+      }
+      var rootForFrost = window.getComputedStyle(document.documentElement);
+      var frostDark = (rootForFrost.getPropertyValue('--text-dark') || '').trim() || '#1a1a1a';
+      applyColor(frostDark);
+      return;
+    }
+
+    // 1) Match a real top-level nav link — contrast-correct at-top over hero.
+    var navLink = navbar.querySelector('.nav-menu > li > a, .nav-links > li > a, .nav-menu a, .nav-links a');
+    if (!navLink) {
+      navLink = navbar.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"]):not(.logo-link)');
+    }
+    if (navLink) {
+      var linkColor = window.getComputedStyle(navLink).color;
+      if (linkColor && linkColor !== 'rgb(0, 0, 0)' && linkColor !== 'rgba(0, 0, 0, 0)') {
+        applyColor(linkColor);
+        return;
+      }
+    }
+
+    // 2) Prefer --nav-text (baked for transparent navbars over heroes) — at-top only.
+    var rootCs = window.getComputedStyle(document.documentElement);
+    var navText = (rootCs.getPropertyValue('--nav-text') || '').trim();
+    if (navText && navText.toLowerCase() !== 'currentcolor') {
+      applyColor(navText);
+      return;
+    }
+
+    var nbCs = window.getComputedStyle(navbar);
+    var bg = nbCs.backgroundColor;
+
+    // 3) Opaque navbar background → luminance pick.
+    if (isOpaqueBg(bg)) {
+      applyColor(pickFromLuminance(parseColor(bg)));
+      return;
+    }
+
+    // 4) Transparent navbar with a gradient scrim (e.g. rgba(0,0,0,.35) → clear):
+    //    use the darkest non-near-transparent stop — never the page body beneath.
+    var bi = nbCs.backgroundImage || '';
+    if (bi && bi !== 'none') {
+      var stops = bi.match(/rgba?\([^)]+\)|#[a-fA-F0-9]{3,8}/g) || [];
+      var darkest = null, darkestLum = 2;
+      for (var si = 0; si < stops.length; si++) {
+        var alphaM = stops[si].match(/rgba\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*([\d.]+)/);
+        if (alphaM && parseFloat(alphaM[1]) < 0.15) continue;
+        var pr = parseColor(stops[si]);
+        if (!pr) continue;
+        var sl = getLuminance(pr);
+        if (sl < darkestLum) { darkestLum = sl; darkest = pr; }
+      }
+      if (darkest) {
+        applyColor(pickFromLuminance(darkest));
+        return;
+      }
+    }
+
+    // 5) Transparent over hero media → light icon (do NOT walk to body/html).
+    function hasHeroMediaBehind() {
+      var hero = document.querySelector(
+        'section[class*="hero"], .hero, [data-zappy-section="hero"], main > section:first-of-type, body > section:first-of-type'
+      );
+      if (!hero) return false;
+      if (hero.querySelector('img, video, [data-hero-bg], .zappy-section-video-bg, .zappy-section-video')) return true;
+      var hbi = window.getComputedStyle(hero).backgroundImage || '';
+      return hbi.indexOf('url(') >= 0;
+    }
+    if (hasHeroMediaBehind()) {
+      var textLight = (rootCs.getPropertyValue('--text-light') || '').trim() || '#F3FAFF';
+      applyColor(textLight);
+      return;
+    }
+
+    // 6) Last resort for transparent nav without hero cue — prefer --text-light
+    //    over walking to body (cream page bg was the false "light navbar" signal).
+    var fallbackLight = (rootCs.getPropertyValue('--text-light') || '').trim() || '#F3FAFF';
+    applyColor(fallbackLight);
+  }
+
+  // Expose + re-run on frosted scroll so at-top (light) and scrolled (dark) both work.
+  window.fixLanguageSwitcherColor = fixLanguageSwitcherColor;
+  if (!window.__zappyLangSwitcherColorScrollBound) {
+    window.__zappyLangSwitcherColorScrollBound = true;
+    var _langColorScrollTimer = null;
+    function scheduleLangSwitcherColorFix() {
+      if (_langColorScrollTimer) return;
+      _langColorScrollTimer = setTimeout(function() {
+        _langColorScrollTimer = null;
+        try { fixLanguageSwitcherColor(); } catch (e4) {}
+      }, 16);
+    }
+    window.addEventListener('scroll', scheduleLangSwitcherColorFix, { passive: true });
+    window.addEventListener('resize', scheduleLangSwitcherColorFix, { passive: true });
+    if (typeof MutationObserver === 'function') {
+      try {
+        var _langNav = document.querySelector('.navbar') || document.querySelector('nav');
+        if (_langNav) {
+          new MutationObserver(scheduleLangSwitcherColorFix).observe(_langNav, {
+            attributes: true,
+            attributeFilter: ['class', 'style']
+          });
+        }
+      } catch (e5) {}
+    }
   }
   
   // Initialize on DOM ready
@@ -10993,6 +11158,10 @@ html[dir="rtl"] body {
 </script>
 
     <script src="/script.js"></script>
+
+    <script id="zappy-font-awesome-loader">
+(function(){if(window.__zappyFontAwesomeLoader)return;window.__zappyFontAwesomeLoader=true;var href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';function load(){if(document.querySelector('link[href*="font-awesome"][href*="all.min.css"]'))return;var l=document.createElement('link');l.rel='stylesheet';l.href=href;l.crossOrigin='anonymous';l.referrerPolicy='no-referrer';document.head.appendChild(l);}function schedule(){if('requestIdleCallback'in window){requestIdleCallback(load,{timeout:5000});}else{setTimeout(load,3500);}}['pointerdown','keydown','touchstart','mouseover'].forEach(function(evt){window.addEventListener(evt,load,{once:true,passive:true});});schedule();})();
+</script>
 
     <script id="zappy-mobile-submenu-script">
     (function() {
@@ -11186,5 +11355,4 @@ html[dir="rtl"] body {
       else setTimeout(init,50);
     })();
     </script>
-</body>
-</html>
+</body></html>
