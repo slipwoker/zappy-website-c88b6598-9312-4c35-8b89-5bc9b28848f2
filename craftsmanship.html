@@ -221,6 +221,377 @@
 })();
 </script>
 <!-- End Zappy Analytics -->
+<!-- Zappy Marketing Events -->
+<script>
+(function() {
+  'use strict';
+  if (window.zappyFireMarketingEvent) return;
+
+  var ECOM_MODE = "full";
+  var IS_CATALOG = false;
+  var IS_FULL = true;
+
+  var ECOM_ALIAS = {
+    begin_checkout: 'checkout_started',
+    purchase: 'checkout_complete',
+    add_to_cart: 'add_to_cart',
+    view_product: 'view_product'
+  };
+
+  function pagePath() {
+    try {
+      if (window.ZAPPY_CONFIG && window.ZAPPY_CONFIG.currentPagePath) {
+        return window.ZAPPY_CONFIG.currentPagePath;
+      }
+    } catch (e) {}
+    try { return window.location.pathname || '/'; } catch (e2) { return '/'; }
+  }
+
+  function normalizeItems(meta) {
+    meta = meta || {};
+    var raw = meta.items || meta.cartItems || meta.cart_items || meta.lineItems || [];
+    if (!Array.isArray(raw)) raw = [];
+    var out = [];
+    for (var i = 0; i < raw.length; i++) {
+      var item = raw[i];
+      if (!item || typeof item !== 'object') continue;
+      var id = String(item.item_id || item.productId || item.product_id || item.id || '').trim();
+      var name = String(item.item_name || item.productName || item.product_name || item.name || '').trim();
+      var price = parseFloat(item.price != null ? item.price : (item.unitPrice != null ? item.unitPrice : 0)) || 0;
+      var quantity = Math.max(1, parseInt(item.quantity != null ? item.quantity : (item.qty != null ? item.qty : 1), 10) || 1);
+      if (!id && !name) continue;
+      out.push({ item_id: id || name, item_name: name || id, price: price, quantity: quantity });
+    }
+    return out;
+  }
+
+  function buildGa4Params(eventId, meta) {
+    meta = meta || {};
+    var items = normalizeItems(meta);
+    var value = parseFloat(meta.value != null ? meta.value : (meta.total != null ? meta.total : 0)) || 0;
+    var currency = String(meta.currency || 'USD').toUpperCase();
+
+    if (eventId === 'checkout_complete') {
+      return {
+        transaction_id: String(meta.transaction_id || meta.orderId || meta.order_id || meta.orderNumber || '') || undefined,
+        value: value,
+        currency: currency,
+        items: items
+      };
+    }
+    if (eventId === 'checkout_started') {
+      return { value: value, currency: currency, items: items };
+    }
+    if (eventId === 'add_to_cart') {
+      var atcItems = items.length ? items : [{
+        item_id: String(meta.productId || meta.product_id || ''),
+        item_name: String(meta.productName || meta.product_name || ''),
+        price: parseFloat(meta.value != null ? meta.value : (meta.price != null ? meta.price : 0)) || 0,
+        quantity: parseInt(meta.quantity != null ? meta.quantity : 1, 10) || 1
+      }].filter(function(x) { return x.item_id || x.item_name; });
+      return {
+        value: value || (atcItems[0] ? atcItems[0].price * atcItems[0].quantity : 0),
+        currency: currency,
+        items: atcItems
+      };
+    }
+    if (eventId === 'view_product') {
+      var vpItems = items.length ? items : [{
+        item_id: String(meta.productId || meta.product_id || ''),
+        item_name: String(meta.productName || meta.product_name || ''),
+        price: parseFloat(meta.price != null ? meta.price : (meta.value != null ? meta.value : 0)) || 0,
+        quantity: 1
+      }].filter(function(x) { return x.item_id || x.item_name; });
+      return {
+        currency: currency,
+        value: value || (vpItems[0] ? vpItems[0].price : 0),
+        items: vpItems
+      };
+    }
+    if (eventId === 'whatsapp_click' || eventId === 'phone_click') {
+      return { method: eventId === 'whatsapp_click' ? 'whatsapp' : 'phone', page_path: meta.pagePath || pagePath() };
+    }
+    if (eventId === 'contact_form_submitted' || eventId === 'product_inquiry') {
+      return { page_path: meta.pagePath || pagePath() };
+    }
+    return meta;
+  }
+
+  function buildMetaParams(eventId, meta) {
+    meta = meta || {};
+    var items = normalizeItems(meta);
+    var value = parseFloat(meta.value != null ? meta.value : (meta.total != null ? meta.total : 0)) || 0;
+    var currency = String(meta.currency || 'USD').toUpperCase();
+    var contentIds = [];
+    var numItems = 0;
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].item_id) contentIds.push(items[i].item_id);
+      numItems += items[i].quantity || 1;
+    }
+
+    if (eventId === 'checkout_complete') {
+      return {
+        value: value,
+        currency: currency,
+        content_ids: contentIds.length ? contentIds : undefined,
+        content_type: 'product',
+        num_items: numItems || undefined,
+        order_id: String(meta.order_id || meta.orderId || meta.transaction_id || meta.orderNumber || '') || undefined
+      };
+    }
+    if (eventId === 'checkout_started') {
+      return {
+        value: value,
+        currency: currency,
+        content_ids: contentIds.length ? contentIds : undefined,
+        content_type: 'product',
+        num_items: numItems || parseInt(meta.itemCount != null ? meta.itemCount : 0, 10) || undefined
+      };
+    }
+    if (eventId === 'add_to_cart') {
+      var id = String(meta.productId || meta.product_id || contentIds[0] || '');
+      return {
+        value: value || (items[0] ? items[0].price * items[0].quantity : 0),
+        currency: currency,
+        content_ids: id ? [id] : (contentIds.length ? contentIds : undefined),
+        content_type: 'product',
+        content_name: meta.productName || meta.product_name || (items[0] && items[0].item_name),
+        num_items: parseInt(meta.quantity != null ? meta.quantity : (numItems || 1), 10) || 1
+      };
+    }
+    if (eventId === 'view_product') {
+      var vid = String(meta.productId || meta.product_id || contentIds[0] || '');
+      return {
+        value: value || parseFloat(meta.price != null ? meta.price : 0) || 0,
+        currency: currency,
+        content_ids: vid ? [vid] : (contentIds.length ? contentIds : undefined),
+        content_type: 'product',
+        content_name: meta.productName || meta.product_name || (items[0] && items[0].item_name)
+      };
+    }
+    if (eventId === 'whatsapp_click' || eventId === 'phone_click') {
+      return {
+        content_name: eventId === 'whatsapp_click' ? 'WhatsApp' : 'Phone',
+        content_category: 'contact'
+      };
+    }
+    if (eventId === 'contact_form_submitted' || eventId === 'product_inquiry') {
+      return {
+        content_name: eventId === 'product_inquiry' ? 'Product inquiry' : 'Contact form',
+        content_category: meta.productName || meta.product_name || undefined
+      };
+    }
+    return meta;
+  }
+
+  var PLATFORM = {
+    whatsapp_click: { ga4: 'contact', meta: 'Contact', gtm: 'whatsapp_click', ecom: false },
+    phone_click: { ga4: 'contact', meta: 'Contact', gtm: 'phone_click', ecom: false },
+    contact_form_submitted: { ga4: 'generate_lead', meta: 'Lead', gtm: 'contact_form_submitted', ecom: false },
+    checkout_started: { ga4: 'begin_checkout', meta: 'InitiateCheckout', gtm: 'begin_checkout', ecom: true },
+    checkout_complete: { ga4: 'purchase', meta: 'Purchase', gtm: 'purchase', ecom: true },
+    product_inquiry: { ga4: 'generate_lead', meta: 'Lead', gtm: 'product_inquiry', ecom: false },
+    add_to_cart: { ga4: 'add_to_cart', meta: 'AddToCart', gtm: 'add_to_cart', ecom: true },
+    view_product: { ga4: 'view_item', meta: 'ViewContent', gtm: 'view_item', ecom: true }
+  };
+
+  function purchaseDedupKey(orderId) {
+    return 'zappy_purchase_fired_' + String(orderId || '');
+  }
+
+  function alreadyFiredPurchase(orderId) {
+    if (!orderId) return false;
+    try {
+      return sessionStorage.getItem(purchaseDedupKey(orderId)) === '1';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function markPurchaseFired(orderId) {
+    if (!orderId) return;
+    try { sessionStorage.setItem(purchaseDedupKey(orderId), '1'); } catch (e) {}
+  }
+
+  /**
+   * Fire a marketing event to first-party analytics + GA4/GTM/Meta when present.
+   * @param {string} eventName marketing ID or ecommerce alias
+   * @param {object} [metadata]
+   * @param {{ skipFirstParty?: boolean }} [opts]
+   */
+  window.zappyFireMarketingEvent = function(eventName, metadata, opts) {
+    try {
+      opts = opts || {};
+      metadata = metadata || {};
+      var eventId = ECOM_ALIAS[eventName] || eventName;
+      var plat = PLATFORM[eventId];
+      if (!plat) return;
+
+      if (!metadata.pagePath && !metadata.page_path) {
+        metadata.pagePath = pagePath();
+      }
+
+      if (eventId === 'checkout_complete') {
+        var oid = String(metadata.orderId || metadata.order_id || metadata.transaction_id || '');
+        if (oid && alreadyFiredPurchase(oid)) return;
+        if (oid) markPurchaseFired(oid);
+      }
+
+      // First-party (skip when already tracked via zappyTrackEcomAnalytics path
+      // that opts out, or when caller already recorded under a different name)
+      if (!opts.skipFirstParty) {
+        try {
+          if (window.zappyAnalytics && typeof window.zappyAnalytics.track === 'function') {
+            window.zappyAnalytics.track(eventId, metadata);
+          }
+        } catch (e1) {}
+      }
+
+      // GTM / dataLayer — platform-standard ecommerce event names
+      try {
+        window.dataLayer = window.dataLayer || [];
+        if (plat.ecom) {
+          var ga4ForGtm = buildGa4Params(eventId, metadata);
+          var ecommerce = {};
+          if (ga4ForGtm.transaction_id) ecommerce.transaction_id = ga4ForGtm.transaction_id;
+          if (ga4ForGtm.value != null) ecommerce.value = ga4ForGtm.value;
+          if (ga4ForGtm.currency) ecommerce.currency = ga4ForGtm.currency;
+          if (ga4ForGtm.items) ecommerce.items = ga4ForGtm.items;
+          window.dataLayer.push({ event: plat.gtm, ecommerce: ecommerce });
+          // Secondary Zappy-specific trigger for merchants who want it
+          if (eventId === 'checkout_complete' || eventId === 'checkout_started') {
+            window.dataLayer.push({ event: eventId, ecommerce: ecommerce });
+          }
+        } else {
+          var dl = { event: plat.gtm };
+          for (var k in metadata) {
+            if (Object.prototype.hasOwnProperty.call(metadata, k)) dl[k] = metadata[k];
+          }
+          window.dataLayer.push(dl);
+        }
+      } catch (e2) {}
+
+      // GA4 gtag
+      try {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', plat.ga4, buildGa4Params(eventId, metadata));
+        }
+      } catch (e3) {}
+
+      // Meta Pixel (only when fbq is loaded — consent-gated lazy loader)
+      try {
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', plat.meta, buildMetaParams(eventId, metadata));
+        }
+      } catch (e4) {}
+    } catch (err) {}
+  };
+
+  // ---- Click listeners (capture) ----
+  var recent = Object.create(null);
+  function dedupe(key) {
+    var now = Date.now();
+    if (recent[key] && now - recent[key] < 800) return true;
+    recent[key] = now;
+    return false;
+  }
+
+  function closest(el, selector) {
+    if (!el) return null;
+    if (el.closest) return el.closest(selector);
+    return null;
+  }
+
+  function findAnchor(el) {
+    var node = el;
+    while (node && node !== document) {
+      if (node.tagName === 'A') return node;
+      node = node.parentElement;
+    }
+    return null;
+  }
+
+  function isWhatsAppHref(href) {
+    if (!href) return false;
+    var h = String(href).toLowerCase();
+    return h.indexOf('wa.me/') !== -1 ||
+      h.indexOf('api.whatsapp.com') !== -1 ||
+      h.indexOf('whatsapp.com/send') !== -1 ||
+      h.indexOf('whatsapp:') === 0;
+  }
+
+  document.addEventListener('click', function(e) {
+    try {
+      var target = e.target;
+      if (!target) return;
+
+      // WhatsApp
+      var waFloat = closest(target, '.whatsapp-float, a.whatsapp-float, [data-zappy-whatsapp]');
+      var anchor = findAnchor(target);
+      var href = (anchor && anchor.href) || '';
+      if (waFloat || (anchor && isWhatsAppHref(href))) {
+        if (!dedupe('wa:' + href)) {
+          var waSource = waFloat ? 'float' : 'link';
+          window.zappyFireMarketingEvent('whatsapp_click', {
+            source: waSource,
+            href: href || null,
+            pagePath: pagePath()
+          });
+        }
+        return;
+      }
+
+      // Phone
+      var phoneBtn = closest(target, '.phone-header-btn, .nav-phone-btn, .call-btn, [data-zappy-phone]');
+      var telHref = '';
+      if (anchor && anchor.href && String(anchor.href).toLowerCase().indexOf('tel:') === 0) {
+        telHref = anchor.href;
+      } else if (phoneBtn && phoneBtn.href && String(phoneBtn.href).toLowerCase().indexOf('tel:') === 0) {
+        telHref = phoneBtn.href;
+      }
+      if (phoneBtn || telHref) {
+        var phone = '';
+        if (telHref) {
+          phone = String(telHref).replace(/^tel:/i, '').trim();
+        }
+        if (!dedupe('tel:' + (phone || (phoneBtn && phoneBtn.id) || 'btn'))) {
+          window.zappyFireMarketingEvent('phone_click', {
+            source: phoneBtn ? 'button' : 'link',
+            phone: phone || null,
+            href: telHref || null,
+            pagePath: pagePath()
+          });
+        }
+        return;
+      }
+
+      // Catalog / product inquiry
+      if (IS_CATALOG || IS_FULL) {
+        var inq = closest(target, '.card-inquiry-btn, #zappy-pdp-inquiry-btn, a.inquiry-btn');
+        if (inq) {
+          if (!dedupe('inq:' + (inq.id || inq.className))) {
+            var product = window.currentProduct || null;
+            var productId = (inq.getAttribute && inq.getAttribute('data-product-id')) ||
+              (product && product.id) || null;
+            var productName = (inq.getAttribute && inq.getAttribute('data-product-name')) ||
+              (product && product.name) || null;
+            var channel = 'contact_page';
+            var inqHref = (inq.tagName === 'A' && inq.href) ? inq.href : '';
+            if (inqHref && String(inqHref).toLowerCase().indexOf('mailto:') === 0) channel = 'mailto';
+            window.zappyFireMarketingEvent('product_inquiry', {
+              source: inq.id === 'zappy-pdp-inquiry-btn' ? 'pdp' : 'card',
+              productId: productId,
+              productName: productName,
+              channel: channel,
+              pagePath: pagePath()
+            });
+          }
+        }
+      }
+    } catch (err) {}
+  }, true);
+})();
+</script>
     <meta property="og:title" content="Craftsmanship — Natural Wood Art" />
     <meta property="og:description" content="Craftsmanship | Natural Wood Art. handmade craft shops" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -1598,7 +1969,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   
 <script>window.ZAPPY_WEBSITE_ID = "c88b6598-9312-4c35-8b89-5bc9b28848f2";window.ZAPPY_API_BASE = "https://api.zappy5.com"</script>
   <nav class="navbar">
-  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" data-i18n-aria-label="craftsmanship_aria_label_99">
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" data-i18n-aria-label="home_aria_label_118">
     <svg style="display:block !important" class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
@@ -1607,7 +1978,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     </svg>
   </button>
 
-  <button class="phone-header-btn" data-phone="+972505588259" aria-label="Call" data-i18n-aria-label="craftsmanship_aria_label_100">
+  <button class="phone-header-btn" data-phone="+972505588259" aria-label="Call" data-i18n-aria-label="home_aria_label_119">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
     </svg>
@@ -1616,11 +1987,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <div class="nav-container">
     <div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/natural-wood-art-handmade-crafts-woodworking-logo-1775585313368-zg063m.webp?v=1775585314512-kc66dz" alt="Natural Wood Art" class="logo" data-i18n-alt="craftsmanship_alt_84" decoding="async" width="35" height="35" />
+        <img src="/assets/natural-wood-art-handmade-crafts-woodworking-logo-1775585313368-zg063m.webp?v=1775585314512-kc66dz" alt="Natural Wood Art" class="logo" data-i18n-alt="home_alt_98" decoding="async" width="35" height="35" />
       </a>
     </div>
 
-    <ul class="nav-menu" id="navMenu"><li><a href="/craftsmanship" data-i18n="craftsmanship_nav_78">Craftsmanship</a></li>
+    <ul class="nav-menu" id="navMenu"><li><a href="/craftsmanship" data-i18n="home_nav_92">Craftsmanship</a></li>
     
   
     <li class="menu-item-has-children zappy-products-dropdown">
@@ -1635,7 +2006,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         <!-- Categories will be loaded dynamically -->
       <li data-category-id="aa098fe3-2572-42dc-a413-562f6199eea1" data-category-slug="acacia-wood-cutting-board"><a href="/category/acacia-wood-cutting-board" dir="ltr">Acacia wood cutting board</a></li></ul>
     </li>
-  <li class="menu-group-item"><span class="menu-group-title" data-i18n="new_span_125">New Menu</span></li><li><a href="/contact" data-i18n="craftsmanship_nav_80">Contact</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="Login"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="Cart"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
+  <li class="menu-group-item"><span class="menu-group-title" data-i18n="new_span_125">New Menu</span></li><li><a href="/contact" data-i18n="home_nav_94">Contact</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="Login"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="Cart"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
     <input type="text" class="nav-search-input" id="nav-search-input" placeholder="Search products..." autocomplete="off" />
     <button class="nav-search-btn" id="nav-search-btn" title="Search">
       <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -2397,10 +2768,10 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
 </section>
   </main>
   
-  <footer class="site-footer"><div class="footer-container"><div class="footer-top"><div class="footer-col footer-brand"><input type="checkbox" id="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true" /><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1774790825638-m4cfqy4vl" data-element-type="image" data-zappy-zoom-wrapper-width="202px" data-zappy-zoom-wrapper-height="201px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="cursor: pointer; position: relative !important; overflow: hidden !important; width: 202px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: auto !important; height: 201px !important; display: block !important;" data-zappy-click-action="expand"><img src="/assets/natural-wood-art-handmade-crafts-woodworking-service-1775560440674-zu2fg6.webp?v=1775560443010" alt="Natural Wood Art" class="logo" data-element-type="image" data-element-id="img-1774790825638-m4cfqy4vl" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; width: 100% !important; max-width: none !important; max-height: none !important; height: 100.299% !important; margin: 0px !important; left: 0% !important; top: -0.149254% !important; position: absolute !important;" data-zappy-zoom="0.8" data-zappy-original-width="202" data-zappy-original-height="201" data-zappy-object-position="50% 50%" data-zappy-click-action="expand" data-zappy-footer-image="true" data-i18n-alt="craftsmanship_alt_93" decoding="async" width="35" height="35" /></div></label><p class="footer-tagline" data-i18n="craftsmanship_p_42">Handcrafted with intention. Built to last generations.</p><p class="footer-desc" data-i18n="craftsmanship_p_43">Every piece we create carries the warmth of natural wood and the soul of the maker's hand — designed for homes that value beauty, meaning, and craft.</p></div><div class="footer-col footer-links"><h4 class="footer-heading" data-i18n="craftsmanship_h4_16"><span class="heading-accent"></span>Explore</h4><ul class="footer-nav"><li><a href="/craftsmanship" data-i18n="craftsmanship_link_53"><i class="fas fa-chevron-right footer-link-icon"></i>Craftsmanship</a></li><li><a href="/gallery" data-i18n="craftsmanship_link_54"><i class="fas fa-chevron-right footer-link-icon"></i>Gallery</a></li><li><a href="/contact" data-i18n="craftsmanship_link_55"><i class="fas fa-chevron-right footer-link-icon"></i>Contact</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading" data-i18n="craftsmanship_h4_17"><span class="heading-accent"></span>Get in Touch</h4><ul class="footer-contact-list"><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1774790825637-gvs198v4j" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="mailto:support@nwooda.com" data-i18n="craftsmanship_link_56">support@nwooda.com</a></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1774790825637-dpowfiikt" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="tel:+972505588259">+972505588259</a></li><li><a href="/" data-i18n="craftsmanship_link_57"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span><address>&nbsp; &nbsp;4522570, ISRAEL</address></a></li></ul></div><div class="footer-col footer-social-col"><h4 class="footer-heading" data-i18n="craftsmanship_h4_18"><span class="heading-accent"></span>Follow Along</h4><p class="footer-social-desc" data-i18n="craftsmanship_p_44">Join our community of craft lovers and see our latest work.</p><div class="footer-social-links"><a href="https://facebook.com/share/1cDimQEnKZ" aria-label="Facebook" data-i18n-aria-label="craftsmanship_aria_label_101"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="craftsmanship_aria_label_102"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1774790825637-flwjn36v9" data-icon-type="fontawesome"></i></a><a href="https://wa.me/972505588259" aria-label="WhatsApp" data-i18n-aria-label="craftsmanship_aria_label_103"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1774790825637-hthurw0im" data-icon-type="fontawesome"></i></a></div></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copyright" data-i18n="craftsmanship_p_45">© 2026 Natural Wood Art. All rights reserved.</p><div class="footer-legal"><a href="/privacy" data-i18n="craftsmanship_link_58">Privacy Policy</a><span class="legal-sep">·</span><a href="/terms" data-i18n="craftsmanship_link_59">Terms &amp; Conditions</a><span class="separator">|</span>
-            <a href="/return-policy" aria-label="Return Policy" data-i18n="craftsmanship_link_60" data-i18n-aria-label="craftsmanship_aria_label_104">
+  <footer class="site-footer"><div class="footer-container"><div class="footer-top"><div class="footer-col footer-brand"><input type="checkbox" id="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true" /><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1774790825638-m4cfqy4vl" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1774790825638-m4cfqy4vl" data-element-type="image" data-zappy-zoom-wrapper-width="202px" data-zappy-zoom-wrapper-height="201px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="cursor: pointer; position: relative !important; overflow: hidden !important; width: 202px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: auto !important; height: 201px !important; display: block !important;" data-zappy-click-action="expand"><img src="/assets/natural-wood-art-handmade-crafts-woodworking-service-1775560440674-zu2fg6.webp?v=1775560443010" alt="Natural Wood Art" class="logo" data-element-type="image" data-element-id="img-1774790825638-m4cfqy4vl" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; width: 100% !important; max-width: none !important; max-height: none !important; height: 100.299% !important; margin: 0px !important; left: 0% !important; top: -0.149254% !important; position: absolute !important;" data-zappy-zoom="0.8" data-zappy-original-width="202" data-zappy-original-height="201" data-zappy-object-position="50% 50%" data-zappy-click-action="expand" data-zappy-footer-image="true" data-i18n-alt="home_alt_112" decoding="async" width="35" height="35" /></div></label><p class="footer-tagline" data-i18n="home_p_44">Handcrafted with intention. Built to last generations.</p><p class="footer-desc" data-i18n="home_p_45">Every piece we create carries the warmth of natural wood and the soul of the maker's hand — designed for homes that value beauty, meaning, and craft.</p></div><div class="footer-col footer-links"><h4 class="footer-heading" data-i18n="home_h4_17"><span class="heading-accent"></span>Explore</h4><ul class="footer-nav"><li><a href="/craftsmanship" data-i18n="home_link_69"><i class="fas fa-chevron-right footer-link-icon"></i>Craftsmanship</a></li><li><a href="/gallery" data-i18n="home_link_70"><i class="fas fa-chevron-right footer-link-icon"></i>Gallery</a></li><li><a href="/contact" data-i18n="home_link_71"><i class="fas fa-chevron-right footer-link-icon"></i>Contact</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading" data-i18n="home_h4_18"><span class="heading-accent"></span>Get in Touch</h4><ul class="footer-contact-list"><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1774790825637-gvs198v4j" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="mailto:support@nwooda.com" data-i18n="home_link_72">support@nwooda.com</a></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1774790825637-dpowfiikt" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><a href="tel:+972505588259">+972505588259</a></li><li><a href="/" data-i18n="home_link_73"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span><address>&nbsp; &nbsp;4522570, ISRAEL</address></a></li></ul></div><div class="footer-col footer-social-col"><h4 class="footer-heading" data-i18n="home_h4_19"><span class="heading-accent"></span>Follow Along</h4><p class="footer-social-desc" data-i18n="home_p_46">Join our community of craft lovers and see our latest work.</p><div class="footer-social-links"><a href="https://facebook.com/share/1cDimQEnKZ" aria-label="Facebook" data-i18n-aria-label="home_aria_label_120"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="home_aria_label_121"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1774790825637-flwjn36v9" data-icon-type="fontawesome"></i></a><a href="https://wa.me/972505588259" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_122"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1774790825637-hthurw0im" data-icon-type="fontawesome"></i></a></div></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="footer-copyright" data-i18n="home_p_47">© 2026 Natural Wood Art. All rights reserved.</p><div class="footer-legal"><a href="/privacy" data-i18n="home_link_74">Privacy Policy</a><span class="legal-sep">·</span><a href="/terms" data-i18n="home_link_75">Terms &amp; Conditions</a><span class="separator">|</span>
+            <a href="/return-policy" aria-label="Return Policy" data-i18n="home_link_76" data-i18n-aria-label="home_aria_label_123">
               Return Policy
-            </a><span class="legal-sep">·</span><a href="/accessibility" data-i18n="craftsmanship_link_61">Accessibility</a><span class="legal-sep">·</span><a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="craftsmanship_link_62">Generated by Zappy</a></div></div></div></footer>
+            </a><span class="legal-sep">·</span><a href="/accessibility" data-i18n="home_link_77">Accessibility</a><span class="legal-sep">·</span><a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="home_link_78">Generated by Zappy</a></div></div></div></footer>
   
   <a href="https://wa.me/972505588259" class="whatsapp-float" aria-label="WhatsApp" data-i18n-aria-label="craftsmanship_aria_label_105">
     <i class="fab fa-whatsapp"></i>
